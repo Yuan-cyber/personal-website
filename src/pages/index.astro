@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug"
@@ -11,50 +12,72 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-xl py-1">
+      <span data-i18n-text data-lang="en">Hey there</span>
+      <span data-i18n-text data-lang="zh" class="hidden">你好</span>
+    </div>
+    <div class="text-5xl font-bold">
+      <span data-i18n-text data-lang="en">I'm Yuan Zhao,</span>
+      <span data-i18n-text data-lang="zh" class="hidden">我是赵元，</span>
+    </div>
+    <div class="text-3xl py-3 font-bold">
+      <span data-i18n-text data-lang="en">bridging the gap between human needs and complex systems</span>
+      <span data-i18n-text data-lang="zh" class="hidden">弥合人类需求与复杂系统之间的鸿沟</span>
+    </div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        <span data-i18n-text data-lang="en">
+          This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
+          Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
+          it useful!
+        </span>
+        <span data-i18n-text data-lang="zh" class="hidden">
+          这是一个用 Astro 和 TailwindCSS 构建的免费开源个人作品集模板 <b>Astrofy</b>。
+          你可以在几分钟内搭建包含 Blog、简历、项目展示、Store 与 RSS Feed 的网站。希望你会觉得有用！
+        </span>
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
+      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank">
+        <span data-i18n-text data-lang="en">My story</span>
+        <span data-i18n-text data-lang="zh" class="hidden"> 联系我！</span>
+      </a>
       <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
+        <span data-i18n-text data-lang="en">Contact me</span>
+        <span data-i18n-text data-lang="zh" class="hidden">获取这个模板</span>
       </a>
     </div>
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">My projects</div>
   </div>
 
-  <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+    <Card
+      title="Demo Project 1"
+      img="/post_img.webp"
+      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      url="#"
+      badge="NEW"
+      tags={["Infrastructure", "Project"]}
+    />
+    <Card
+      title="Demo Project 2"
+      img="/post_img.webp"
+      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      url="#"
+      tags={["Corporate", "Project"]}
+    />
+    <Card
+      title="Demo Project 3"
+      img="/post_img.webp"
+      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      url="#"
+      badge="FOSS"
+      tags={["Project", "Residential"]}
+    />
+  </div>
 
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>

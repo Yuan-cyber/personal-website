@@ -1,3 +1,35 @@
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
 }
+
+/* Global typography tuning to reduce contrast + soften font weight. */
+body {
+  color: #2f343a; /* gray-700: deeper gray instead of pure black */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Make text-based utility classes follow our gray tone. */
+.text-base-content {
+  color: #2f343a !important;
+}
+
+/* The template uses a lot of `font-bold`; soften it slightly. */
+.font-bold,
+.title,
+.card-title {
+  font-weight: 600 !important; /* semibold instead of bold */
+}
+
+/* Ensure blog/content typography matches the global text tone. */
+.prose,
+.prose p,
+.prose li,
+.prose a,
+.prose strong,
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  color: #2f343a !important;
+}

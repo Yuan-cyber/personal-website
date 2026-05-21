@@ -84,7 +84,7 @@ const label = (text: string) => shortLabel[text] ?? text;
       <!-- Back link -->
       <div class="not-prose mb-6">
         <button
-          onclick="window.location.href=document.referrer && new URL(document.referrer).hostname===window.location.hostname ? document.referrer : '/'"
+          onclick="history.length > 1 ? history.back() : window.location.href='/'"
           class="text-sm text-[#7C6354] hover:text-[#2E2825] transition-colors cursor-pointer bg-transparent border-none p-0"
           >← Back</button
         >

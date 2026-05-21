@@ -26,12 +26,19 @@ const storeSchema = z.object({
 
 const projectSchema = z.object({
     title: z.string(),
+    titleZh: z.string().optional(),
     description: z.string(),
+    descriptionZh: z.string().optional(),
     heroImage: z.string().optional(),
+    heroHeight: z.string().optional(),
     badge: z.string().optional(),
+    badgeZh: z.string().optional(),
+    liveUrl: z.string().optional(),
+    githubUrl: z.string().optional(),
     tags: z.array(z.string()).refine(items => new Set(items).size === items.length, {
         message: 'tags must be unique',
     }).optional(),
+    tagsZh: z.array(z.string()).optional(),
 });
 
 export type BlogSchema = z.infer<typeof blogSchema>;

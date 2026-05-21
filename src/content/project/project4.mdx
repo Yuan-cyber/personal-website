@@ -1,0 +1,625 @@
+---
+title: "Moodwave App"
+titleZh: "Moodwave 心理健康应用"
+description: "A full-stack mental health app built on CBT research — emotion tracking, anonymous community support, and a gamified stress-relief module designed to improve retention."
+descriptionZh: "基于 CBT 研究构建的全栈心理健康应用——情绪追踪、匿名社区支持，以及针对留存率问题专项设计的游戏化解压模块。"
+heroImage: "/moodwave/封面.jpg"
+badge: "Academic"
+badgeZh: "学术项目"
+tags: ["Full-stack", "Gamification", "Mental Health"]
+tagsZh: ["全栈开发", "游戏化", "心理健康"]
+---
+
+import En from "../../components/En.astro";
+import Zh from "../../components/Zh.astro";
+
+<En>
+
+<div class="h-8"></div>
+
+## About
+
+<div class="not-prose mb-6 mt-3">
+<p class="text-[#2E2825] leading-relaxed mb-4">Moodwave was my final-year dissertation at the University of Galway, School of Computer Science — a full-stack mental health support app grounded in Cognitive Behavioral Therapy (CBT) research and targeted user studies.</p>
+<p class="text-[#2E2825] leading-relaxed mb-6">The project spanned the full product lifecycle: literature review, user screening and research, design, front-end and back-end development, game development, and testing. Every feature decision traces back to research evidence or direct user feedback.</p>
+
+<div class="not-prose my-8 grid grid-cols-3 gap-4">
+
+  <div class="bg-[#F0EBE3] rounded-xl p-5 border border-[#E3DAD0]">
+    <div class="text-xs font-semibold uppercase tracking-widest text-[#B5967A] mb-2">Context</div>
+    <div class="text-sm font-semibold text-[#2E2825] mb-1">Final Year Dissertation</div>
+    <div class="text-xs text-[#7C6354]">University of Galway · School of Computer Science</div>
+  </div>
+  <div class="bg-[#F0EBE3] rounded-xl p-5 border border-[#E3DAD0]">
+    <div class="text-xs font-semibold uppercase tracking-widest text-[#B5967A] mb-2">My Role</div>
+    <div class="text-sm font-semibold text-[#2E2825] mb-1">Everything</div>
+    <div class="text-xs text-[#7C6354]">Research · Design · Full-stack Dev · Game Dev · Testing</div>
+  </div>
+  <div class="bg-[#F0EBE3] rounded-xl p-5 border border-[#E3DAD0]">
+    <div class="text-xs font-semibold uppercase tracking-widest text-[#B5967A] mb-2">Stack</div>
+    <div class="text-sm font-semibold text-[#2E2825] mb-1">Spring Boot · React · Phaser</div>
+    <div class="text-xs text-[#7C6354]">JWT · REST API · Tailwind · Selenium</div>
+  </div>
+</div>
+</div>
+
+
+## Problem
+
+Mental health apps face a structural retention problem. Users download, try, and abandon — not because the tools don't work, but because repeated self-reflection without engagement becomes a chore.
+
+## Solution
+
+The core idea was to introduce interaction layers. A gamified module makes staying intrinsically rewarding — using physical movement as a mood intervention. At the same time, low-stakes community connection is provided to ease isolation without the pressure of direct social engagement.
+
+## Process
+
+<div class="not-prose my-8">
+  <div class="grid grid-cols-6 gap-0 relative">
+    <div class="absolute top-[7px] left-[8.3%] right-[8.3%] h-px bg-[#E3DAD0]"></div>
+    <div class="flex flex-col items-center text-center px-2">
+      <div class="w-3.5 h-3.5 rounded-full bg-[#C4B5A8] mb-2.5 relative z-10 flex-shrink-0"></div>
+      <div class="text-sm font-bold text-[#B5967A] mb-1">01</div>
+      <div class="text-xs font-bold text-[#2E2825]">Literature Review</div>
+    </div>
+    <div class="flex flex-col items-center text-center px-2">
+      <div class="w-3.5 h-3.5 rounded-full bg-[#C4B5A8] mb-2.5 relative z-10 flex-shrink-0"></div>
+      <div class="text-sm font-bold text-[#B5967A] mb-1">02</div>
+      <div class="text-xs font-bold text-[#2E2825]">User Research</div>
+    </div>
+    <div class="flex flex-col items-center text-center px-2">
+      <div class="w-3.5 h-3.5 rounded-full bg-[#C4B5A8] mb-2.5 relative z-10 flex-shrink-0"></div>
+      <div class="text-sm font-bold text-[#B5967A] mb-1">03</div>
+      <div class="text-xs font-bold text-[#2E2825]">Design</div>
+    </div>
+    <div class="flex flex-col items-center text-center px-2">
+      <div class="w-3.5 h-3.5 rounded-full bg-[#C4B5A8] mb-2.5 relative z-10 flex-shrink-0"></div>
+      <div class="text-sm font-bold text-[#B5967A] mb-1">04</div>
+      <div class="text-xs font-bold text-[#2E2825]">Full-Stack Dev</div>
+    </div>
+    <div class="flex flex-col items-center text-center px-2">
+      <div class="w-3.5 h-3.5 rounded-full bg-[#C4B5A8] mb-2.5 relative z-10 flex-shrink-0"></div>
+      <div class="text-sm font-bold text-[#B5967A] mb-1">05</div>
+      <div class="text-xs font-bold text-[#2E2825]">Game Dev</div>
+    </div>
+    <div class="flex flex-col items-center text-center px-2">
+      <div class="w-3.5 h-3.5 rounded-full bg-[#C4B5A8] mb-2.5 relative z-10 flex-shrink-0"></div>
+      <div class="text-sm font-bold text-[#B5967A] mb-1">06</div>
+      <div class="text-xs font-bold text-[#2E2825]">Testing</div>
+    </div>
+  </div>
+</div>
+
+## Who this is for
+
+Rather than designing for "people with mental health needs" broadly, this project targeted a specific personality profile: individuals scoring low on **extraversion** and **emotional stability** in the Big Five model.
+
+<div class="not-prose my-6 grid grid-cols-2 gap-5">
+  <div class="pl-4 py-2 border-l-2 border-[#B5967A]">
+    <div class="text-xs font-semibold uppercase tracking-widest text-[#B5967A] mb-2">Low Extraversion</div>
+    <div class="text-sm font-bold text-[#2E2825] mb-2">Socially withdrawn, self-directed</div>
+    <div class="text-sm text-[#7C6354] leading-relaxed">Tendency toward solitary processing over shared emotional expression. Less likely to seek peer support unprompted — and therefore underserved by community-first interventions.</div>
+  </div>
+  <div class="pl-4 py-2 border-l-2 border-[#C4A882]">
+    <div class="text-xs font-semibold uppercase tracking-widest text-[#B5967A] mb-2">High Neuroticism</div>
+    <div class="text-sm font-bold text-[#2E2825] mb-2">Anxiety-prone, most CBT-responsive</div>
+    <div class="text-sm text-[#7C6354] leading-relaxed">Higher susceptibility to anxiety and mood fluctuation. Negatively associated with treatment outcomes — but also the group most responsive to structured CBT techniques when barriers to access are removed.</div>
+  </div>
+</div>
+
+
+## Research Foundation
+
+The design methodology is grounded in CBT — Cognitive Behavioral Therapy — an evidence-based psychotherapy built on the relationship between thoughts, feelings, and behaviour. Three of its techniques map directly onto the features: **self-monitoring** (mood tracking), **behavioural activation** (the game), and **graduated social exposure** (the community). CBT not only informed which features to build, but how each one should work.
+
+## User Research
+
+Participants were screened through a Big Five personality test, then completed a semi-structured questionnaire covering demographics, prior experience with mental health tools, feature preferences, and UI style. A total of **79 responses** were collected. The feature options drew from CBT techniques and other evidence-based interventions identified during the literature review.
+
+<div class="not-prose my-8 grid grid-cols-2 gap-4">
+  <div class="bg-[#B5967A] rounded-xl p-5 border border-[#A89080]">
+    <div class="text-xs font-semibold uppercase tracking-widest text-[#FAF8F4] mb-3">What would put you off?</div>
+    <div class="space-y-2.5">
+      <div class="flex items-center gap-3"><div class="h-1.5 rounded-full bg-[#FAF8F4]" style="width:72%"></div><div class="text-xs text-[#FAF8F4] whitespace-nowrap">Ads or paywalls — 70%+</div></div>
+      <div class="flex items-center gap-3"><div class="h-1.5 rounded-full bg-[#FAF8F4]" style="width:64%"></div><div class="text-xs text-[#FAF8F4] whitespace-nowrap">Poor UX — 64%</div></div>
+      <div class="flex items-center gap-3"><div class="h-1.5 rounded-full bg-[#FAF8F4]" style="width:55%"></div><div class="text-xs text-[#FAF8F4] whitespace-nowrap">Unreliable content — 55%+</div></div>
+    </div>
+  </div>
+  <div class="bg-[#7C6354] rounded-xl p-5 border border-[#6B5449]">
+    <div class="text-xs font-semibold uppercase tracking-widest text-[#FAF8F4] mb-3">What do you want?</div>
+    <div class="space-y-2">
+      <div class="flex items-center gap-3"><div class="h-1.5 rounded-full bg-[#D0C5B8]" style="width:55%"></div><div class="text-xs text-[#FAF8F4] whitespace-nowrap">Mood tracking — 55%+</div></div>
+      <div class="flex items-center gap-3"><div class="h-1.5 rounded-full bg-[#D0C5B8]" style="width:52%"></div><div class="text-xs text-[#FAF8F4] whitespace-nowrap">Interactive games — 52%</div></div>
+      <div class="flex items-center gap-3"><div class="h-1.5 rounded-full bg-[#D0C5B8]" style="width:50%"></div><div class="text-xs text-[#FAF8F4] whitespace-nowrap">Community support — 50%</div></div>
+    </div>
+  </div>
+</div>
+
+## Design Decision
+
+Based on CBT principles and the research findings, three features were selected — each chosen because it addresses a specific psychological mechanism, and also a user preference.
+
+<div class="not-prose my-8 grid grid-cols-3 gap-4">
+  <div class="bg-[#F0EBE3] rounded-xl p-5 border border-[#E3DAD0]">
+    <div class="text-center text-2xl font-bold text-[#B5967A] mb-3">01</div>
+    <div class="text-center text-sm font-bold text-[#2E2825] mb-1">Mood Tracking</div>
+    <div class="text-center text-[10px] font-semibold uppercase tracking-widest text-[#B5967A] mb-3">Self-monitoring</div>
+    <div class="text-center text-xs text-[#7C6354] leading-relaxed">Recording an emotion creates cognitive distance — a felt experience becomes an observable pattern.</div>
+  </div>
+  <div class="bg-[#F0EBE3] rounded-xl p-5 border border-[#E3DAD0]">
+    <div class="text-center text-2xl font-bold text-[#B5967A] mb-3">02</div>
+    <div class="text-center text-sm font-bold text-[#2E2825] mb-1">Community Support</div>
+    <div class="text-center text-[10px] font-semibold uppercase tracking-widest text-[#B5967A] mb-3">Low-stakes connection</div>
+    <div class="text-center text-xs text-[#7C6354] leading-relaxed">Low-risk interaction reduces isolation for introverted users without the anxiety of direct social contact.</div>
+  </div>
+  <div class="bg-[#F0EBE3] rounded-xl p-5 border border-[#E3DAD0]">
+    <div class="text-center text-2xl font-bold text-[#B5967A] mb-3">03</div>
+    <div class="text-center text-sm font-bold text-[#2E2825] mb-1">Gamified Module</div>
+    <div class="text-center text-[10px] font-semibold uppercase tracking-widest text-[#B5967A] mb-3">Reward activation</div>
+    <div class="text-center text-xs text-[#7C6354] leading-relaxed">Physical action and goal completion activate reward pathways, breaking the cycle of rumination.</div>
+  </div>
+</div>
+
+
+## How It's Built
+
+The backend and frontend are separated by design — authentication, data, and business logic live server-side, leaving the frontend focused purely on UI. The game runs as a standalone module, because its rendering operates outside the frontend entirely.
+
+Once the core flows were built, Selenium was used to automate end-to-end testing across critical user journeys — validating behaviour from a user-perspective lens before the usability sessions ran.
+
+<div class="not-prose mt-4 mb-8">
+  <div class="grid grid-cols-3 divide-x divide-[#E3DAD0]">
+    <div class="px-6 py-5 text-center">
+      <div class="text-xs font-bold text-[#2E2825] mb-2">Backend</div>
+      <div class="text-xs text-[#7C6354] leading-relaxed">Spring Boot · MySQL · JWT · RESTful API</div>
+    </div>
+    <div class="px-6 py-5 text-center">
+      <div class="text-xs font-bold text-[#2E2825] mb-2">Frontend</div>
+      <div class="text-xs text-[#7C6354] leading-relaxed">React · TypeScript · Tailwind · Ant Design</div>
+    </div>
+    <div class="px-6 py-5 text-center">
+      <div class="text-xs font-bold text-[#2E2825] mb-2">Game layer</div>
+      <div class="text-xs text-[#7C6354] leading-relaxed">Phaser · Webpack bundle</div>
+    </div>
+  </div>
+</div>
+
+<div class="not-prose flex flex-col gap-6">
+  <div class="flex items-center gap-8">
+    <div class="flex-1">
+      <div class="text-sm font-semibold text-[#2E2825] mb-1.5">MoodPack Dashboard</div>
+      <div class="text-xs text-[#7C6354] leading-relaxed">Core mood-tracking view. Logs are grouped into emotion-tagged packs — Happiness, Anxiety, Depression, Peace — and browsable by date.</div>
+    </div>
+    <img src="/moodwave/前端2.png" alt="MoodPack dashboard" class="w-[55%] shrink-0 rounded-lg" style="height:210px;object-fit:cover;object-position:top" />
+  </div>
+  <div class="flex items-center gap-8">
+    <div class="flex-1">
+      <div class="text-sm font-semibold text-[#2E2825] mb-1.5">Community · MoodPack Ocean</div>
+      <div class="text-xs text-[#7C6354] leading-relaxed">Anonymous public feed. Users browse moods drifted by others, and after "picking" an entry they can leave a message to interact with the original poster — low-stakes connection by design.</div>
+    </div>
+    <img src="/moodwave/前端3.png" alt="Community feed" class="w-[55%] shrink-0 rounded-lg" style="height:210px;object-fit:cover;object-position:top" />
+  </div>
+  <div class="flex items-center gap-8">
+    <div class="flex-1">
+      <div class="text-sm font-semibold text-[#2E2825] mb-1.5">Mood Entry · Detail view</div>
+      <div class="text-xs text-[#7C6354] leading-relaxed">Individual entry with emotion tag, topic, and description. One button to "Drift" it into the community feed — opt-in sharing, never forced.</div>
+    </div>
+    <img src="/moodwave/前端4.png" alt="Mood entry detail" class="w-[55%] shrink-0 rounded-lg" style="height:210px;object-fit:cover;object-position:top" />
+  </div>
+</div>
+
+## The Game Module
+
+<div class="not-prose mt-2 mb-6">
+  <p class="leading-relaxed text-[#2E2825] mb-3">This is the most deliberate design response to the retention problem. The core idea: <strong>make the invisible visible.</strong></p>
+  <p class="leading-relaxed text-[#7C6354]">Negative emotion as a concept is hard to engage with — abstract, diffuse, without shape or boundary. The game's first design decision was to give it one. Each monster has a distinct colour and form, representing a kind of emotional state. Emotions aren't good or bad — they exist to protect you. The game's implicit message is that you can move through them.</p>
+</div>
+
+<div class="not-prose my-6 rounded-xl overflow-hidden border border-[#E3DAD0]" style="width:100%;aspect-ratio:8/5;position:relative;background:#74C6E8;cursor:pointer" onclick="(function(el){var f=el.querySelector('iframe');var c=el.querySelector('.game-cover');var s=el.clientWidth/800;f.style.cssText='position:absolute;top:0;left:0;width:800px;height:500px;transform-origin:top left;transform:scale('+s+');display:block;border:none';f.src=f.dataset.src;c.style.display='none';el.style.cursor='default'})(this)">
+  <div class="game-cover" style="position:absolute;inset:0;z-index:2;display:flex;align-items:center;justify-content:center;background:url('/moodwave/游戏封面.png') center/cover no-repeat">
+    <button style="background:#FA5C5C;color:#fff!important;border:none;border-radius:8px;padding:11px 28px;font-size:15px;font-weight:700;display:flex;align-items:center;gap:9px;pointer-events:none;font-family:sans-serif;line-height:1">
+      <svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><polygon points="2,1 12,7 2,13" fill="#fff"/></svg>
+      <span style="color:#fff!important">Run game</span>
+    </button>
+  </div>
+  <iframe
+    data-src="https://html-classic.itch.zone/html/13490334/index.html"
+    scrolling="no"
+    frameborder="0"
+    allowtransparency="true"
+    allowfullscreen="true"
+    mozallowfullscreen="true"
+    msallowfullscreen="true"
+    webkitallowfullscreen="true"
+    allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share"
+    style="display:none"
+  ></iframe>
+</div>
+
+
+<div class="not-prose mb-6 grid grid-cols-3 gap-3">
+  <img src="/moodwave/game1.jpg" alt="Game screenshot 1" class="w-full rounded-lg object-cover" />
+  <img src="/moodwave/game2.jpg" alt="Game screenshot 2" class="w-full rounded-lg object-cover" />
+  <img src="/moodwave/game3.jpg" alt="Game screenshot 3" class="w-full rounded-lg object-cover" />
+</div>
+
+<div class="not-prose mb-6">
+  <p class="leading-relaxed text-[#7C6354] mb-3">The game is a peaceful side-scroller. The player controls a small hero jumping across platforms through a soothing landscape, hitting different emotions to score. Some emotions push your score up, others bring it down — and certain ones trigger stars, balloons, or fireworks.</p>
+  <p class="leading-relaxed text-[#7C6354]">There's a timer, but the pace isn't stressful. Randomised level elements ensure no two sessions feel identical, addressing one of the most common reasons mental health app features get used once and abandoned.</p>
+</div>
+
+
+<div class="not-prose"><span class="text-lg font-semibold">Building it</span></div>
+
+Learning Phaser from scratch was part of the project. The reason I chose it was pragmatic — a mature physics engine, an active community, and a build output that embeds cleanly into the existing app. Sprite assets were sourced from itch.io and Dotown, with custom sprites drawn in Pixilart.
+
+<div class="h-2"></div>
+The game went through several iterations — the final version is also published as a standalone title on [itch.io ↗](https://yuanzhiyi.itch.io/pixel-mood).
+
+<div class="not-prose mt-6 space-y-3">
+  <div class="pl-4 border-l-2 border-[#E3DAD0]">
+    <p class="text-sm text-[#2E2825] leading-relaxed italic">"Fun! The platformer controls were a lil tricky at times, but it was lovely seeing flowers and trees blossom where you collected happy emotions."</p>
+    <p class="text-xs text-[#B5967A] mt-1.5">curiousConductor · itch.io</p>
+  </div>
+  <div class="pl-4 border-l-2 border-[#E3DAD0]">
+    <p class="text-sm text-[#2E2825] leading-relaxed italic">"Cute game. Love the graphics, love the sounds. I like the concept — creative take on the theme — and your build is great."</p>
+    <p class="text-xs text-[#B5967A] mt-1.5">MishManners · itch.io</p>
+  </div>
+</div>
+
+
+## Usability Testing & Results
+
+Five participants completed pre- and post-test surveys, performed key tasks across all features, and rated the app using the **User Experience Questionnaire (UEQ)**. Per Nielsen's research, five users are enough to surface around 85% of usability issues — a standard choice when balancing coverage against resource constraints.
+
+<div class="not-prose my-6 border border-[#E3DAD0] rounded-xl overflow-hidden">
+  <div class="grid grid-cols-3 border-b border-[#E3DAD0] bg-[#F0EBE3]">
+    <div class="px-5 py-3 text-xs font-semibold uppercase tracking-widest text-[#B5967A]">Dimension</div>
+    <div class="px-3 py-3 text-xs font-semibold uppercase tracking-widest text-[#B5967A]">Mean</div>
+    <div class="px-3 py-3 text-xs font-semibold uppercase tracking-widest text-[#B5967A]">Variance</div>
+  </div>
+  <div class="grid grid-cols-3 border-b border-[#E3DAD0]">
+    <div class="px-5 py-4 text-sm text-[#2E2825]">Attractiveness</div>
+    <div class="px-3 py-4 text-sm font-semibold text-[#7C6354]">4.2</div>
+    <div class="px-3 py-4 text-sm text-[#B5967A]">0.56</div>
+  </div>
+  <div class="grid grid-cols-3 border-b border-[#E3DAD0]">
+    <div class="px-5 py-4 text-sm text-[#2E2825]">Perspicuity</div>
+    <div class="px-3 py-4 text-sm font-semibold text-[#7C6354]">4.0</div>
+    <div class="px-3 py-4 text-sm text-[#B5967A]">0.40</div>
+  </div>
+  <div class="grid grid-cols-3 border-b border-[#E3DAD0]">
+    <div class="px-5 py-4 text-sm text-[#2E2825]">Efficiency</div>
+    <div class="px-3 py-4 text-sm font-semibold text-[#7C6354]">4.6</div>
+    <div class="px-3 py-4 text-sm text-[#B5967A]">0.24</div>
+  </div>
+  <div class="grid grid-cols-3 border-b border-[#E3DAD0]">
+    <div class="px-5 py-4 text-sm text-[#2E2825]">Dependability</div>
+    <div class="px-3 py-4 text-sm font-semibold text-[#2E2825]">5.0 ✦</div>
+    <div class="px-3 py-4 text-sm text-[#B5967A]">0.00</div>
+  </div>
+  <div class="grid grid-cols-3">
+    <div class="px-5 py-4 text-sm text-[#2E2825]">Aesthetics</div>
+    <div class="px-3 py-4 text-sm font-semibold text-[#7C6354]">4.6</div>
+    <div class="px-3 py-4 text-sm text-[#B5967A]">0.24</div>
+  </div>
+</div>
+
+Dependability scored a perfect 5.0 with zero variance — every participant agreed the system behaved exactly as expected. This reflects the investment in Selenium automated testing, which validated critical flows from a user-perspective lens before the usability sessions ran.
+
+Two issues were surfaced and iterated on: confusion around the 'mood board' widget on the homepage (resolved by enlarging helper text and reducing visual density), and insufficient game instructions (resolved with contextual onboarding text).
+
+
+## Reflection
+
+The most honest thing I can say about this project is that the emotion tracking feature — while functional and research-grounded — is a solved problem. By the time of writing, some apps on the market have raised the bar for what mood logging can feel like. If I were building this again, I'd spend less time on the logging interface and more on what happens after the log.
+
+What I'm more proud of is the reasoning chain that connects the Big Five screening → CBT framework → feature set → visual language. The design didn't emerge from intuition — it came from a documented chain of decisions, each traceable to evidence. That discipline is what I'd carry forward.
+
+</En>
+
+<Zh>
+
+<div class="h-8"></div>
+
+## 概述
+
+Moodwave 是我在爱尔兰国立高威大学计算机科学学院的毕业设计课题——一款基于认知行为疗法（CBT）研究与针对性用户调研构建的全栈心理健康支持应用。
+
+项目覆盖完整的产品生命周期：文献综述、用户筛选与调研、设计、前后端开发、游戏开发以及测试。每一个功能决策都能追溯到研究证据或用户的直接反馈。
+
+<div class="not-prose my-8 grid grid-cols-3 gap-4">
+  <div class="bg-[#F0EBE3] rounded-xl p-5 border border-[#E3DAD0]">
+    <div class="text-xs font-semibold uppercase tracking-widest text-[#B5967A] mb-2">背景</div>
+    <div class="text-sm font-semibold text-[#2E2825] mb-1">毕业设计论文</div>
+    <div class="text-xs text-[#7C6354]">爱尔兰国立高威大学 · 计算机科学学院</div>
+  </div>
+  <div class="bg-[#F0EBE3] rounded-xl p-5 border border-[#E3DAD0]">
+    <div class="text-xs font-semibold uppercase tracking-widest text-[#B5967A] mb-2">我的角色</div>
+    <div class="text-sm font-semibold text-[#2E2825] mb-1">全程独立完成</div>
+    <div class="text-xs text-[#7C6354]">研究 · 设计 · 全栈开发 · 游戏开发 · 测试</div>
+  </div>
+  <div class="bg-[#F0EBE3] rounded-xl p-5 border border-[#E3DAD0]">
+    <div class="text-xs font-semibold uppercase tracking-widest text-[#B5967A] mb-2">技术栈</div>
+    <div class="text-sm font-semibold text-[#2E2825] mb-1">Spring Boot · React · Phaser</div>
+    <div class="text-xs text-[#7C6354]">JWT · REST API · Tailwind · Selenium</div>
+  </div>
+</div>
+
+
+## 问题定义
+
+心理健康应用面临结构性的留存危机。用户下载、尝试、放弃——不是因为工具无效，而是因为反复的自我记录在缺乏参与感的情况下会变成一种负担。
+
+
+## 解决方案
+
+核心想法是引入多层交互。游戏化模块使持续使用本身就成为一种内在奖励——以身体运动作为情绪干预手段。同时，低风险的社群连接为孤立的用户提供支持，而无需直接社交的压力。
+
+
+## 研究与设计过程
+
+<div class="not-prose my-8">
+  <div class="grid grid-cols-6 gap-0 relative">
+    <div class="absolute top-[7px] left-[8.3%] right-[8.3%] h-px bg-[#E3DAD0]"></div>
+    <div class="flex flex-col items-center text-center px-2">
+      <div class="w-3.5 h-3.5 rounded-full bg-[#C4B5A8] mb-2.5 relative z-10 flex-shrink-0"></div>
+      <div class="text-sm font-bold text-[#B5967A] mb-1">01</div>
+      <div class="text-xs font-bold text-[#2E2825]">文献综述</div>
+    </div>
+    <div class="flex flex-col items-center text-center px-2">
+      <div class="w-3.5 h-3.5 rounded-full bg-[#C4B5A8] mb-2.5 relative z-10 flex-shrink-0"></div>
+      <div class="text-sm font-bold text-[#B5967A] mb-1">02</div>
+      <div class="text-xs font-bold text-[#2E2825]">用户研究</div>
+    </div>
+    <div class="flex flex-col items-center text-center px-2">
+      <div class="w-3.5 h-3.5 rounded-full bg-[#C4B5A8] mb-2.5 relative z-10 flex-shrink-0"></div>
+      <div class="text-sm font-bold text-[#B5967A] mb-1">03</div>
+      <div class="text-xs font-bold text-[#2E2825]">设计</div>
+    </div>
+    <div class="flex flex-col items-center text-center px-2">
+      <div class="w-3.5 h-3.5 rounded-full bg-[#C4B5A8] mb-2.5 relative z-10 flex-shrink-0"></div>
+      <div class="text-sm font-bold text-[#B5967A] mb-1">04</div>
+      <div class="text-xs font-bold text-[#2E2825]">全栈开发</div>
+    </div>
+    <div class="flex flex-col items-center text-center px-2">
+      <div class="w-3.5 h-3.5 rounded-full bg-[#C4B5A8] mb-2.5 relative z-10 flex-shrink-0"></div>
+      <div class="text-sm font-bold text-[#B5967A] mb-1">05</div>
+      <div class="text-xs font-bold text-[#2E2825]">游戏开发</div>
+    </div>
+    <div class="flex flex-col items-center text-center px-2">
+      <div class="w-3.5 h-3.5 rounded-full bg-[#C4B5A8] mb-2.5 relative z-10 flex-shrink-0"></div>
+      <div class="text-sm font-bold text-[#B5967A] mb-1">06</div>
+      <div class="text-xs font-bold text-[#2E2825]">测试</div>
+    </div>
+  </div>
+</div>
+
+
+## 目标用户
+
+本项目没有泛泛地面向"有心理健康需求的人"，而是针对特定人格画像：在大五人格模型中**外倾性**和**情绪稳定性**得分偏低的个体。
+
+<div class="not-prose my-6 grid grid-cols-2 gap-5">
+  <div class="pl-4 py-4 border-l-2 border-[#B5967A]">
+    <div class="text-xs font-semibold uppercase tracking-widest text-[#B5967A] mb-2">低外倾性</div>
+    <div class="text-sm font-bold text-[#2E2825] mb-2">社交回避，自我驱动</div>
+    <div class="text-sm text-[#7C6354] leading-relaxed">偏好独自处理情绪而非寻求他人分享。在没有外部推动的情况下不太可能主动求助——因此在以社区为核心的干预方式中往往被忽视。</div>
+  </div>
+  <div class="pl-4 py-4 border-l-2 border-[#C4A882]">
+    <div class="text-xs font-semibold uppercase tracking-widest text-[#B5967A] mb-2">高神经质</div>
+    <div class="text-sm font-bold text-[#2E2825] mb-2">易焦虑，对 CBT 最敏感</div>
+    <div class="text-sm text-[#7C6354] leading-relaxed">更易焦虑、情绪波动，倾向于负面自我评价。虽与治疗结果负相关，但一旦降低获取门槛，也是对结构化 CBT 技术响应最为显著的群体。</div>
+  </div>
+</div>
+
+## 研究基础
+
+认知行为疗法（CBT）是一种循证心理疗法，建立在思维、情绪与行为三者相互影响的理论基础之上。本项目的三个核心功能分别对应 CBT 的三种干预技术：**自我监控**（情绪追踪）、**行为激活**（游戏模块）、**渐进式社交暴露**（社区功能）。CBT 不仅提供了功能选择的依据，也定义了每个功能应该如何运作。
+
+
+## 用户调研
+
+参与者通过大五人格在线测试进行初步筛选，随后接受半结构化问卷，内容涵盖基本信息、心理健康工具使用经历、功能偏好和 UI 风格偏好。问卷共收到 **79 份**有效回复，功能选项综合参考了 CBT 治疗技术，以及文献综述阶段发现的其他循证心理干预方式。
+
+<div class="not-prose my-8 grid grid-cols-2 gap-4">
+  <div class="bg-[#B5967A] rounded-xl p-5 border border-[#A89080]">
+    <div class="text-xs font-semibold uppercase tracking-widest text-[#FAF8F4] mb-3">什么会让你放弃使用？</div>
+    <div class="space-y-2.5">
+      <div class="flex items-center gap-3"><div class="h-1.5 rounded-full bg-[#FAF8F4]" style="width:72%"></div><div class="text-xs text-[#FAF8F4] whitespace-nowrap">广告或付费墙 — 70%+</div></div>
+      <div class="flex items-center gap-3"><div class="h-1.5 rounded-full bg-[#FAF8F4]" style="width:64%"></div><div class="text-xs text-[#FAF8F4] whitespace-nowrap">体验差 — 64%</div></div>
+      <div class="flex items-center gap-3"><div class="h-1.5 rounded-full bg-[#FAF8F4]" style="width:55%"></div><div class="text-xs text-[#FAF8F4] whitespace-nowrap">内容不可信 — 55%+</div></div>
+    </div>
+  </div>
+  <div class="bg-[#7C6354] rounded-xl p-5 border border-[#6B5449]">
+    <div class="text-xs font-semibold uppercase tracking-widest text-[#FAF8F4] mb-3">你希望有什么功能？</div>
+    <div class="space-y-2">
+      <div class="flex items-center gap-3"><div class="h-1.5 rounded-full bg-[#D0C5B8]" style="width:55%"></div><div class="text-xs text-[#FAF8F4] whitespace-nowrap">情绪追踪 — 55%+</div></div>
+      <div class="flex items-center gap-3"><div class="h-1.5 rounded-full bg-[#D0C5B8]" style="width:52%"></div><div class="text-xs text-[#FAF8F4] whitespace-nowrap">互动游戏 — 52%</div></div>
+      <div class="flex items-center gap-3"><div class="h-1.5 rounded-full bg-[#D0C5B8]" style="width:50%"></div><div class="text-xs text-[#FAF8F4] whitespace-nowrap">社区支持 — 50%</div></div>
+    </div>
+  </div>
+</div>
+
+## 设计决策
+
+基于 CBT 原则与调研结果，三项核心功能被纳入设计——每一项都针对一种具体的心理机制，同时也回应了用户偏好。
+
+<div class="not-prose my-8 grid grid-cols-3 gap-4">
+  <div class="bg-[#F0EBE3] rounded-xl p-5 border border-[#E3DAD0]">
+    <div class="text-center text-2xl font-bold text-[#B5967A] mb-3">01</div>
+    <div class="text-center text-sm font-bold text-[#2E2825] mb-1">情绪追踪</div>
+    <div class="text-center text-[10px] font-semibold uppercase tracking-widest text-[#B5967A] mb-2">自我监控</div>
+    <div class="text-center text-xs text-[#7C6354] leading-relaxed">记录情绪产生认知距离——感受转化为可观察的模式。</div>
+  </div>
+  <div class="bg-[#F0EBE3] rounded-xl p-5 border border-[#E3DAD0]">
+    <div class="text-center text-2xl font-bold text-[#B5967A] mb-3">02</div>
+    <div class="text-center text-sm font-bold text-[#2E2825] mb-1">社区支持</div>
+    <div class="text-center text-[10px] font-semibold uppercase tracking-widest text-[#B5967A] mb-2">低风险连接</div>
+    <div class="text-center text-xs text-[#7C6354] leading-relaxed">低风险社群互动减轻孤立感，无需承受直接社交的焦虑。</div>
+  </div>
+  <div class="bg-[#F0EBE3] rounded-xl p-5 border border-[#E3DAD0]">
+    <div class="text-center text-2xl font-bold text-[#B5967A] mb-3">03</div>
+    <div class="text-center text-sm font-bold text-[#2E2825] mb-1">游戏模块</div>
+    <div class="text-center text-[10px] font-semibold uppercase tracking-widest text-[#B5967A] mb-2">奖励激活</div>
+    <div class="text-center text-xs text-[#7C6354] leading-relaxed">身体动作与目标达成激活奖励回路，打断反复思考的循环。</div>
+  </div>
+</div>
+
+
+
+## 应用构建
+
+前后端分离设计——认证、数据与业务逻辑全部在服务端处理，前端专注于 UI 呈现。游戏作为独立模块运行，因为其渲染机制完全在前端体系之外。
+
+核心流程开发完成后，使用 Selenium 对关键用户路径进行了端到端自动化测试，在可用性测试开始前从用户视角完成了行为验证。
+
+<div class="not-prose mt-4 mb-8">
+  <div class="grid grid-cols-3 divide-x divide-[#E3DAD0]">
+    <div class="px-6 py-5 text-center">
+      <div class="text-xs font-bold text-[#2E2825] mb-2">后端</div>
+      <div class="text-xs text-[#7C6354] leading-relaxed">Spring Boot · MySQL · JWT · RESTful API</div>
+    </div>
+    <div class="px-6 py-5 text-center">
+      <div class="text-xs font-bold text-[#2E2825] mb-2">前端</div>
+      <div class="text-xs text-[#7C6354] leading-relaxed">React · TypeScript · Tailwind · Ant Design</div>
+    </div>
+    <div class="px-6 py-5 text-center">
+      <div class="text-xs font-bold text-[#2E2825] mb-2">游戏层</div>
+      <div class="text-xs text-[#7C6354] leading-relaxed">Phaser · Webpack 打包</div>
+    </div>
+  </div>
+</div>
+
+<div class="not-prose my-6 flex flex-col gap-6">
+  <div class="flex items-center gap-8">
+    <div class="flex-1">
+      <div class="text-sm font-semibold text-[#2E2825] mb-1.5">MoodPack 主页</div>
+      <div class="text-xs text-[#7C6354] leading-relaxed">核心情绪追踪视图。记录按情绪标签分组——快乐、焦虑、抑郁、平静——并支持按日期浏览。</div>
+    </div>
+    <img src="/moodwave/前端2.png" alt="MoodPack 主页" class="w-[55%] shrink-0 rounded-lg" style="height:210px;object-fit:cover;object-position:top" />
+  </div>
+  <div class="flex items-center gap-8">
+    <div class="flex-1">
+      <div class="text-sm font-semibold text-[#2E2825] mb-1.5">社区 · MoodPack Ocean</div>
+      <div class="text-xs text-[#7C6354] leading-relaxed">匿名公共动态流。用户可以浏览他人漂流的情绪包，"拾取"感兴趣的条目后可添加留言与对方互动。</div>
+    </div>
+    <img src="/moodwave/前端3.png" alt="社区动态" class="w-[55%] shrink-0 rounded-lg" style="height:210px;object-fit:cover;object-position:top" />
+  </div>
+  <div class="flex items-center gap-8">
+    <div class="flex-1">
+      <div class="text-sm font-semibold text-[#2E2825] mb-1.5">情绪详情页</div>
+      <div class="text-xs text-[#7C6354] leading-relaxed">单条记录的完整视图，含情绪标签、话题与描述。点击"漂流"即可匿名分享至社区——主动选择，而非强制。</div>
+    </div>
+    <img src="/moodwave/前端4.png" alt="情绪详情页" class="w-[55%] shrink-0 rounded-lg" style="height:210px;object-fit:cover;object-position:top" />
+  </div>
+</div>
+
+## 游戏模块
+
+<div class="not-prose mt-2 mb-6">
+  <p class="leading-relaxed text-[#2E2825] mb-3">这是针对留存率问题最主要的设计回应。核心想法：<strong>让看不见的东西变得可见。</strong></p>
+  <p class="leading-relaxed text-[#7C6354] mb-3">"负面情绪"作为概念很难直接面对——抽象、弥散，没有形状，也没有边界。游戏的第一个设计决策，就是给它一个形状。每种怪物有独特的颜色与形态，对应不同的情绪。</p>
+  <p class="leading-relaxed text-[#7C6354]">情绪本身没有好坏之分，它们的存在是为了保护你。游戏传递的隐含信息是：你可以渡过它们。</p>
+</div>
+
+<div class="not-prose my-6 rounded-xl overflow-hidden border border-[#E3DAD0]" style="width:100%;aspect-ratio:8/5;position:relative;background:#74C6E8;cursor:pointer" onclick="(function(el){var f=el.querySelector('iframe');var c=el.querySelector('.game-cover');var s=el.clientWidth/800;f.style.cssText='position:absolute;top:0;left:0;width:800px;height:500px;transform-origin:top left;transform:scale('+s+');display:block;border:none';f.src=f.dataset.src;c.style.display='none';el.style.cursor='default'})(this)">
+  <div class="game-cover" style="position:absolute;inset:0;z-index:2;display:flex;align-items:center;justify-content:center;background:url('/moodwave/游戏封面.png') center/cover no-repeat">
+    <button style="background:#FA5C5C;color:#fff!important;border:none;border-radius:8px;padding:11px 28px;font-size:15px;font-weight:700;display:flex;align-items:center;gap:9px;pointer-events:none;font-family:sans-serif;line-height:1">
+      <svg width="14" height="14" viewBox="0 0 14 14" style="flex-shrink:0"><polygon points="2,1 12,7 2,13" fill="#fff"/></svg>
+      <span style="color:#fff!important">Run game</span>
+    </button>
+  </div>
+  <iframe
+    data-src="https://html-classic.itch.zone/html/13490334/index.html"
+    scrolling="no"
+    frameborder="0"
+    allowtransparency="true"
+    allowfullscreen="true"
+    mozallowfullscreen="true"
+    msallowfullscreen="true"
+    webkitallowfullscreen="true"
+    allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share"
+    style="display:none"
+  ></iframe>
+</div>
+
+<div class="not-prose mb-6 grid grid-cols-3 gap-3">
+  <img src="/moodwave/game1.jpg" alt="游戏截图 1" class="w-full rounded-lg object-cover" />
+  <img src="/moodwave/game2.jpg" alt="游戏截图 2" class="w-full rounded-lg object-cover" />
+  <img src="/moodwave/game3.jpg" alt="游戏截图 3" class="w-full rounded-lg object-cover" />
+</div>
+
+<div class="not-prose mb-6">
+  <p class="leading-relaxed text-[#2E2825] mb-3">这是一款平和的横版游戏。玩家操控一个小英雄穿越宁静的场景，沿途在平台上跳跃、击中各种情绪得分。有些情绪让你的分数上升，有些则让它下降，还会触发星星、气球或烟花效果。</p>
+  <p class="leading-relaxed text-[#2E2825]">游戏有定时，但节奏不紧张。关卡元素随机化保证每次游玩体验不完全相同，直接应对了心理健康应用功能"用一次就不用了"的核心问题。</p>
+</div>
+
+<div class="not-prose mb-2 mt-6"><span class="text-lg font-semibold">技术实现</span></div>
+
+从零开始学习 Phaser 是这个项目的一部分。选择它的原因很务实——成熟的物理引擎、活跃的社区，构建输出也可以直接嵌入现有应用。此外，游戏部分素材来自 itch.io 和 Dotown，自定义精灵在 Pixilart 中绘制。
+
+<div class="h-2"></div>
+游戏经历了多轮迭代——最终版本已作为独立游戏发布至 [itch.io ↗](https://yuanzhiyi.itch.io/pixel-mood)。
+
+<div class="not-prose mt-6 space-y-3">
+  <div class="pl-4 border-l-2 border-[#E3DAD0]">
+    <p class="text-sm text-[#2E2825] leading-relaxed italic">"Fun! The platformer controls were a lil tricky at times, but it was lovely seeing flowers and trees blossom where you collected happy emotions."</p>
+    <p class="text-xs text-[#B5967A] mt-1.5">curiousConductor · itch.io</p>
+  </div>
+  <div class="pl-4 border-l-2 border-[#E3DAD0]">
+    <p class="text-sm text-[#2E2825] leading-relaxed italic">"Cute game. Love the graphics, love the sounds. I like the concept — creative take on the theme — and your build is great."</p>
+    <p class="text-xs text-[#B5967A] mt-1.5">MishManners · itch.io</p>
+  </div>
+</div>
+
+
+## 可用性测试与结果
+
+五名参与者完成了测试前后问卷、主要功能任务，并使用用户体验问卷（UEQ）对应用进行评分（1–5分制）。根据 Nielsen 的研究，5名用户足以发现约85%的可用性问题，在资源有限的情况下是兼顾覆盖率与成本的标准选择。
+
+<div class="not-prose my-6 border border-[#E3DAD0] rounded-xl overflow-hidden">
+  <div class="grid grid-cols-3 border-b border-[#E3DAD0] bg-[#F0EBE3]">
+    <div class="px-5 py-3 text-xs font-semibold uppercase tracking-widest text-[#B5967A]">维度</div>
+    <div class="px-3 py-3 text-xs font-semibold uppercase tracking-widest text-[#B5967A]">均值</div>
+    <div class="px-3 py-3 text-xs font-semibold uppercase tracking-widest text-[#B5967A]">方差</div>
+  </div>
+  <div class="grid grid-cols-3 border-b border-[#E3DAD0]">
+    <div class="px-5 py-4 text-sm text-[#2E2825]">吸引力</div>
+    <div class="px-3 py-4 text-sm font-semibold text-[#7C6354]">4.2</div>
+    <div class="px-3 py-4 text-sm text-[#B5967A]">0.56</div>
+  </div>
+  <div class="grid grid-cols-3 border-b border-[#E3DAD0]">
+    <div class="px-5 py-4 text-sm text-[#2E2825]">清晰度</div>
+    <div class="px-3 py-4 text-sm font-semibold text-[#7C6354]">4.0</div>
+    <div class="px-3 py-4 text-sm text-[#B5967A]">0.40</div>
+  </div>
+  <div class="grid grid-cols-3 border-b border-[#E3DAD0]">
+    <div class="px-5 py-4 text-sm text-[#2E2825]">效率</div>
+    <div class="px-3 py-4 text-sm font-semibold text-[#7C6354]">4.6</div>
+    <div class="px-3 py-4 text-sm text-[#B5967A]">0.24</div>
+  </div>
+  <div class="grid grid-cols-3 border-b border-[#E3DAD0]">
+    <div class="px-5 py-4 text-sm text-[#2E2825]">可靠性</div>
+    <div class="px-3 py-4 text-sm font-semibold text-[#2E2825]">5.0 ✦</div>
+    <div class="px-3 py-4 text-sm text-[#B5967A]">0.00</div>
+  </div>
+  <div class="grid grid-cols-3">
+    <div class="px-5 py-4 text-sm text-[#2E2825]">美观度</div>
+    <div class="px-3 py-4 text-sm font-semibold text-[#7C6354]">4.6</div>
+    <div class="px-3 py-4 text-sm text-[#B5967A]">0.24</div>
+  </div>
+</div>
+
+可靠性得分满分 5.0，方差为零——所有参与者一致认为系统行为完全符合预期。这直接反映了 Selenium 自动化测试的投入——在可用性测试开始前，所有关键流程已从用户视角完成验证。
+
+测试发现了两处问题并进行了迭代：首页"情绪看板"组件引发困惑（通过放大说明文字、降低视觉密度解决），以及游戏缺乏操作说明（通过上下文引导文字解决）。
+
+
+## 复盘
+
+坦率地说，情绪记录功能——尽管有功能基础、有研究支撑——本质上是个已被解决的问题。写这篇文章时，市面上已有应用将情绪追踪做得很好。如果重新来过，我会把更少的精力放在记录界面上，更多地思考记录之后发生什么。
+
+我更为之骄傲的，是那条从大五筛选 → CBT 框架 → 功能集 → 视觉语言的推理链。设计不是凭直觉生长出来的，而是来自一串可追溯的决策。这种思维方式，正是我未来会继续秉持的。
+
+</Zh>

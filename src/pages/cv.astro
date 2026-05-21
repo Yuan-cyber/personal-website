@@ -4,89 +4,182 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
+  <div class="max-w-[750px]">
+    <div class="mb-5">
+      <div
+        style="font-family:'Space Mono',ui-monospace,monospace;font-weight:400;font-size:2rem;line-height:1.1;letter-spacing:-0.03em;color:#2E2825;"
+      >
+        Profile
+      </div>
+    </div>
+
+    <div class="mb-10 leading-relaxed">
+      I started in UX research, and somewhere along the way I got curious about
+      how products are actually built — not just how they should be designed. So
+      I learned development. Understanding the technical side changed how I
+      think about design problems, and I've been working across both ever since.
+      I'm genuinely interested in human needs and what it takes to build things
+      that actually serve them. These days I'm also enthusiastic about vibe
+      coding and AI-assisted workflows — finding ways to build faster and think
+      more freely.
+    </div>
+
+    <div class="mb-5">
+      <div
+        style="font-family:'Space Mono',ui-monospace,monospace;font-weight:400;font-size:2rem;line-height:1.1;letter-spacing:-0.03em;color:#2E2825;"
+      >
+        Education
+      </div>
+    </div>
+
+    <div class="time-line-container grid gap-4 mb-10">
+      <TimeLineElement
+        title="University of Galway"
+        subtitle="2022 – 2024 · MSc in Software Design And Development, 1st Class Honours · Galway, Ireland"
+      />
+      <TimeLineElement
+        title="Nanjing Forestry University"
+        subtitle="2018 – 2021 · MSc in Industrial Design Engineering, Top 10% · Nanjing, China"
+      />
+      <TimeLineElement
+        title="Nanjing Forestry University"
+        subtitle="2014 – 2018 · BSc in Industrial Design, Top 20% · Nanjing, China"
+      />
+    </div>
+
+    <div class="mb-5">
+      <div
+        style="font-family:'Space Mono',ui-monospace,monospace;font-weight:400;font-size:2rem;line-height:1.1;letter-spacing:-0.03em;color:#2E2825;"
+      >
+        Experience
+      </div>
+    </div>
+
+    <div class="time-line-container grid gap-4 mb-10">
+      <TimeLineElement
+        title="Software Developer · OneTouch Health"
+        subtitle="2025 – 2026 · Galway, Ireland"
+      >
+        <ul class="list-disc ml-4 space-y-1">
+          <li>
+            Worked in a Product Trio, collaborating across time zones to build
+            and iterate a care management SaaS platform, serving hundreds of
+            organizations in the UK, Ireland, and Australia.
+          </li>
+          <li>
+            Enhanced core functionalities (nursing scheduling, eMAR, payroll
+            settlement) using PHP, MySQL, JavaScript, and AJAX; streamlined
+            operational workflows through asynchronous processing and resolved
+            recurring UX issues reported by clients.
+          </li>
+          <li>
+            Contributed to the development of a new Nursing Home module. Worked
+            with product managers to refine business logic; mapped user flows
+            and defined functional rules to implement features such as bed
+            management and Progress Notes.
+          </li>
+          <li>
+            Executed data migration from legacy servers to new environments,
+            ensuring data integrity for millions of historical records.
+          </li>
+          <li>
+            Performed regular code reviews, using AI-assisted tools to
+            accelerate delivery. Managed environment consistency with Docker and
+            version control with Git.
+          </li>
+        </ul>
+      </TimeLineElement>
+      <TimeLineElement
+        title="Teaching Assistant · University of Galway"
+        subtitle="2023 – 2024 · Galway, Ireland"
+      >
+        <ul class="list-disc ml-4 space-y-1">
+          <li>
+            Delivered tutorials and lab sessions for 70+ Master's students in
+            Programming and Machine Learning; provided one-on-one support for
+            concept clarification and coding challenges.
+          </li>
+          <li>
+            Independently graded 70%+ of student assessments each semester,
+            ensuring timely evaluations and alignment with faculty standards.
+          </li>
+        </ul>
+      </TimeLineElement>
+      <TimeLineElement
+        title="UX Consultant · ISAR Interface Design Co."
+        subtitle="2020 – 2022 · Nanjing, China"
+      >
+        <ul class="list-disc ml-4 space-y-1">
+          <li>
+            Supported the digital transformation for a large commercial bank.
+            Through 43 in-depth interviews & large-scale quantitative
+            validation, identified requirements across 9 business modules;
+            delivered a 109-page report, 400+ prototypes, and interactive demos,
+            with solutions launched in production.
+          </li>
+          <li>
+            Led scenario-based consumer research for a leading IoT brand's smart
+            home product line. Prioritized 20 high-value scenarios from 149
+            candidates via expert review, Kano model, and user/sales input,
+            informing product and GTM strategy.
+          </li>
+          <li>
+            Conducted usability evaluation of an AI low-code platform for a
+            global technology enterprise. Organized 42 issues by severity and
+            NPS; proposed competitor-informed iteration recommendations.
+          </li>
+          <li>
+            Led user experience testing for an in-vehicle infotainment system,
+            covering 21 task scenarios with 12 drivers in a controlled lab
+            setting. Produced a phased optimization roadmap.
+          </li>
+        </ul>
+      </TimeLineElement>
+    </div>
+
+    <div class="mb-5">
+      <div
+        style="font-family:'Space Mono',ui-monospace,monospace;font-weight:400;font-size:2rem;line-height:1.1;letter-spacing:-0.03em;color:#2E2825;"
+      >
+        Skills
+      </div>
+    </div>
+
+    <div class="mb-10 space-y-2">
+      <p>
+        <span class="font-semibold">Product & UX:</span> user interviews, usability
+        testing, A/B testing, requirements analysis, UX wireframing & prototyping,
+        UML diagrams, PRD writing
+      </p>
+      <p>
+        <span class="font-semibold">Programming:</span> Java (Spring Boot), JavaScript
+        & TypeScript (React), HTML/CSS
+      </p>
+      <p>
+        <span class="font-semibold">Data Analysis:</span> Python (Pandas), SQL, SPSS,
+        data visualization
+      </p>
+      <p>
+        <span class="font-semibold">Tools:</span> Figma, Axure, Notion, Xmind, Git,
+        Docker, AWS, Microsoft Office, AI-assisted tools (Claude Code, Cursor)
+      </p>
+      <p>
+        <span class="font-semibold">Languages:</span> English (fluent), Mandarin (native),
+        Cantonese (fluent)
+      </p>
+    </div>
+    <script is:inline>
+      try {
+        localStorage.setItem("site-lang", "en");
+      } catch (e) {}
+      document.querySelector('button[data-lang="zh"]')?.addEventListener(
+        "click",
+        function (e) {
+          e.stopImmediatePropagation();
+          window.location.href = "/cv-zh";
+        },
+        true,
+      );
+    </script>
   </div>
-
-  <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </div>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
-  </div>
-
-  <div class="time-line-container grid gap-4 mb-10">
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-  </div>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
-  </div>
-
-  <div class="time-line-container mb-10">
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-  </div>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
-  </div>
-
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-  </ul>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
-
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-  </ul>
 </BaseLayout>

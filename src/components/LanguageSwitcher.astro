@@ -32,10 +32,7 @@
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved && supported.has(saved)) return saved;
-    } catch (_) {
-      // Ignore storage errors (e.g. private mode)
-    }
-
+    } catch (_) {}
     const locale = (navigator.language || "en").toLowerCase();
     if (locale.startsWith("zh")) return "zh";
     return "en";
@@ -53,13 +50,10 @@
   }
 
   function applyLang(lang) {
-    document
-      .querySelectorAll("[data-i18n-text][data-lang]")
-      .forEach((el) => {
-        const elLang = el.getAttribute("data-lang");
-        el.classList.toggle("hidden", elLang !== lang);
-      });
-
+    document.querySelectorAll("[data-i18n-text][data-lang]").forEach((el) => {
+      const elLang = el.getAttribute("data-lang");
+      el.classList.toggle("hidden", elLang !== lang);
+    });
     document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
     setActiveButton(lang);
   }
@@ -70,23 +64,16 @@
 
     const root = document.getElementById("lang-switch");
     if (!root) return;
-
     root.querySelectorAll("button[data-lang]").forEach((btn) => {
       btn.addEventListener("click", () => {
         const nextLang = btn.getAttribute("data-lang");
         if (!supported.has(nextLang)) return;
-
-        try {
-          localStorage.setItem(STORAGE_KEY, nextLang);
-        } catch (_) {
-          // Ignore storage errors
-        }
-
+        try { localStorage.setItem(STORAGE_KEY, nextLang); } catch (_) {}
         applyLang(nextLang);
       });
     });
   }
 
+  document.addEventListener("astro:page-load", initLangSwitcher);
   document.addEventListener("DOMContentLoaded", initLangSwitcher);
 </script>
-

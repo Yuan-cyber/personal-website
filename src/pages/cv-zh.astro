@@ -1,0 +1,158 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="简历" sideBarActiveItemID="cv">
+  <div class="max-w-[750px]">
+    <div class="mb-5">
+      <div
+        style="font-family:'Space Mono',ui-monospace,monospace;font-weight:400;font-size:2rem;line-height:1.1;letter-spacing:-0.03em;color:#2E2825;"
+      >
+        个人简介
+      </div>
+    </div>
+
+    <div class="mb-10 leading-relaxed">
+      我最初从事用户体验研究，后来出于对产品构建方式的好奇，开始学习开发。理解技术逻辑改变了我思考设计问题的方式，此后我一直在研究与开发两个维度上同时工作。我对人类需求与产品决策之间的关系保持真实的好奇，也热衷于探索
+      vibe coding 和 AI 辅助工作流——寻找更快构建、更自由思考的方式。
+    </div>
+
+    <div class="mb-5">
+      <div
+        style="font-family:'Space Mono',ui-monospace,monospace;font-weight:400;font-size:2rem;line-height:1.1;letter-spacing:-0.03em;color:#2E2825;"
+      >
+        教育经历
+      </div>
+    </div>
+
+    <div class="time-line-container grid gap-4 mb-10">
+      <TimeLineElement
+        title="爱尔兰国立高威大学"
+        subtitle="2022年 – 2024年 · 软件设计与开发硕士，一等荣誉 · 爱尔兰高威"
+      />
+      <TimeLineElement
+        title="南京林业大学"
+        subtitle="2018年 – 2021年 · 工业设计工程硕士，前10% · 中国南京"
+      />
+      <TimeLineElement
+        title="南京林业大学"
+        subtitle="2014年 – 2018年 · 工业设计学士，前20% · 中国南京"
+      />
+    </div>
+
+    <div class="mb-5">
+      <div
+        style="font-family:'Space Mono',ui-monospace,monospace;font-weight:400;font-size:2rem;line-height:1.1;letter-spacing:-0.03em;color:#2E2825;"
+      >
+        工作经历
+      </div>
+    </div>
+
+    <div class="time-line-container grid gap-4 mb-10">
+      <TimeLineElement
+        title="软件开发 · OneTouch Health"
+        subtitle="2025 – 2026 · 爱尔兰高威"
+      >
+        <ul class="list-disc ml-4 space-y-1">
+          <li>
+            参与产品三元组，跨时区协作构建并迭代护理管理 SaaS
+            平台，服务于英国、爱尔兰及澳大利亚数百家机构。
+          </li>
+          <li>
+            使用 PHP、MySQL、JavaScript 和 AJAX
+            优化核心功能（护理排班、电子用药管理、薪资结算等）；通过异步处理优化操作流程，解决客户反馈的
+            UX 问题。
+          </li>
+          <li>
+            参与新护理院模块的开发。与产品经理协作梳理业务逻辑；规划用户流程并定义功能规则，实现床位管理和进展记录等功能。
+          </li>
+          <li>
+            执行历史数据从旧服务器到新环境的迁移，确保数百万条历史记录的数据完整性。
+          </li>
+          <li>
+            参与代码审查，借助 AI 辅助工具提升交付效率；使用 Docker
+            管理环境一致性，Git 进行版本控制。
+          </li>
+        </ul>
+      </TimeLineElement>
+      <TimeLineElement
+        title="助教 · 爱尔兰国立高威大学"
+        subtitle="2023 – 2024 · 爱尔兰高威"
+      >
+        <ul class="list-disc ml-4 space-y-1">
+          <li>
+            为70余名硕士生讲授编程与机器学习课程的辅导课和实验课，提供一对一答疑支持。
+          </li>
+          <li>每学期独立批改70%以上的学生作业，确保评分及时并符合院系标准。</li>
+        </ul>
+      </TimeLineElement>
+      <TimeLineElement
+        title="UX 顾问 · 伊飒尔界面设计有限公司"
+        subtitle="2020 – 2022 · 中国南京"
+      >
+        <ul class="list-disc ml-4 space-y-1">
+          <li>
+            参与大型商业银行数字化转型项目。通过43场深度访谈及大规模定量验证，识别9大业务模块的需求；交付109页研究报告、400+原型及交互演示，方案已上线投产。
+          </li>
+          <li>
+            主导某头部物联网品牌智能家居产品线的场景化用户研究。通过专家评审、卡诺模型及用户/销售输入，从149个候选场景中筛选出20个高价值场景，支撑产品与市场策略。
+          </li>
+          <li>
+            对某全球科技企业 AI 低代码平台进行可用性评估。按严重程度与 NPS
+            整理42个问题，提出以参数简化、业务逻辑清晰化为核心的迭代建议。
+          </li>
+          <li>
+            主导某车载信息娱乐系统的用户体验测试，覆盖21个任务场景，邀请12名不同经验驾驶员参与受控实验室测试，输出分阶段优化路线图。
+          </li>
+        </ul>
+      </TimeLineElement>
+    </div>
+
+    <div class="mb-5">
+      <div
+        style="font-family:'Space Mono',ui-monospace,monospace;font-weight:400;font-size:2rem;line-height:1.1;letter-spacing:-0.03em;color:#2E2825;"
+      >
+        技能
+      </div>
+    </div>
+
+    <div class="mb-10 space-y-2">
+      <p>
+        <span class="font-semibold">产品与用研：</span>用户访谈、可用性测试、A/B
+        测试、需求分析、UX 线框图与原型设计、UML 图、PRD 撰写
+      </p>
+      <p>
+        <span class="font-semibold">编程：</span>Java（Spring Boot）、JavaScript
+        & TypeScript（React）、HTML/CSS
+      </p>
+      <p>
+        <span class="font-semibold">数据分析：</span
+        >Python（Pandas）、SQL、SPSS、数据可视化
+      </p>
+      <p>
+        <span class="font-semibold">工具：</span
+        >Figma、Axure、Notion、Xmind、Git、Docker、AWS、Microsoft Office、AI
+        辅助工具（Claude Code、Cursor）
+      </p>
+      <p>
+        <span class="font-semibold">语言：</span
+        >英语（流利）、普通话（母语）、粤语（流利）
+      </p>
+    </div>
+
+    <script is:inline>
+      try {
+        localStorage.setItem("site-lang", "zh");
+      } catch (e) {}
+      document.querySelector('button[data-lang="en"]')?.addEventListener(
+        "click",
+        function (e) {
+          e.stopImmediatePropagation();
+          window.location.href = "/cv";
+        },
+        true,
+      );
+    </script>
+  </div>
+</BaseLayout>

@@ -22,7 +22,7 @@ const projects = await getCollection("project");
           img={project.data.heroImage}
           desc={project.data.description}
           descZh={project.data.descriptionZh}
-          url={"/projects/" + createSlug(project.data.title, project.slug)}
+          url={"/projects/" + createSlug(project.data.title, project.slug) + "/"}
           badge={project.data.badge}
           tags={project.data.tags}
         />

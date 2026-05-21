@@ -396,7 +396,7 @@ const last_projects = projects.slice(0, 4);
       </p>
     </div>
     <div class="mt-8 flex justify-center gap-5">
-      <a class="btn" id="about-btn" href="/cv">
+      <a class="btn" id="about-btn" href="/cv/">
         <span data-i18n-text data-lang="en">About</span>
         <span data-i18n-text data-lang="zh" class="hidden">关于</span>
       </a>
@@ -832,7 +832,7 @@ const last_projects = projects.slice(0, 4);
   function updateAboutLink() {
     const lang = localStorage.getItem("site-lang") || "en";
     const btn = document.getElementById("about-btn") as HTMLAnchorElement | null;
-    if (btn) btn.href = lang === "zh" ? "/cv-zh" : "/cv";
+    if (btn) btn.href = lang === "zh" ? "/cv-zh/" : "/cv/";
   }
   document.addEventListener("astro:page-load", updateAboutLink);
   document.addEventListener("DOMContentLoaded", updateAboutLink);
@@ -863,19 +863,4 @@ const last_projects = projects.slice(0, 4);
   document.addEventListener("astro:page-load", initPlantVisibility);
   document.addEventListener("DOMContentLoaded", initPlantVisibility);
 
-  function initAccordionClick() {
-    document
-      .querySelectorAll<HTMLAnchorElement>(".accordion-card")
-      .forEach((card) => {
-        card.addEventListener("pointerdown", (e) => {
-          if (e.button === 0 && !e.ctrlKey && !e.metaKey && !e.shiftKey) {
-            e.preventDefault();
-            window.location.href = card.href;
-          }
-        });
-      });
-  }
-
-  document.addEventListener("astro:page-load", initAccordionClick);
-  document.addEventListener("DOMContentLoaded", initAccordionClick);
 </script>

@@ -1,0 +1,276 @@
+---
+import { CollectionEntry, getCollection } from "astro:content";
+import { ProjectSchema } from "../../content/config";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import createSlug from "../../lib/createSlug";
+import { Image } from "astro:assets";
+import En from "../../components/En.astro";
+import Zh from "../../components/Zh.astro";
+
+export async function getStaticPaths() {
+  const projectEntries = await getCollection("project");
+  return projectEntries.map((entry) => ({
+    params: { slug: createSlug(entry.data.title, entry.slug) },
+    props: { entry },
+  }));
+}
+
+interface Props {
+  entry: CollectionEntry<"project">;
+}
+
+const { entry } = Astro.props;
+const project: ProjectSchema = entry.data;
+const { Content, headings } = await entry.render();
+
+const h2s = headings.filter((h) => h.depth === 2);
+const enH2s = h2s.filter((h) => !/[\u4e00-\u9fff]/.test(h.text));
+const zhH2s = h2s.filter((h) => /[\u4e00-\u9fff]/.test(h.text));
+
+const shortLabel: Record<string, string> = {
+  Overview: "Overview",
+  "The Challenge": "Challenge",
+  "The Problem": "Problem",
+  "Research Foundation": "Foundation",
+  "Research Process": "Process",
+  "Key Findings": "Findings",
+  Deliverables: "Deliverables",
+  "From Research to Screen": "Design",
+  "User Research": "Research",
+  "The Game Module": "Game",
+  Architecture: "Arch.",
+  "Usability Testing & Results": "Testing",
+  Reflection: "Reflection",
+  "My Role": "My Role",
+  Research: "Research",
+  Personas: "Personas",
+  项目概述: "概述",
+  挑战: "挑战",
+  问题定义: "问题",
+  研究基础: "基础",
+  研究过程: "过程",
+  关键发现: "发现",
+  交付物: "交付",
+  设计落地: "落地",
+  用户调研: "调研",
+  游戏模块: "游戏",
+  技术架构: "架构",
+  可用性测试与结果: "测试",
+  "Why I built 出发点": "出发点",
+  "What it does 实现": "实现",
+  "A few things I cared about 几个关键点": "关键点",
+  "Stack 技术栈": "技术栈",
+  "Why I built this": "Why",
+  "What it does": "Features",
+  "A few things I cared about": "Details",
+  "Research Process": "Process",
+  研究过程: "研究过程",
+};
+
+const label = (text: string) => shortLabel[text] ?? text;
+---
+
+<BaseLayout
+  title={project.title}
+  description={project.description}
+  image={project.heroImage}
+  wider={true}
+>
+  <div class="flex items-start gap-16">
+    <!-- Main article -->
+    <article
+      class="prose max-w-[750px] flex-1 min-w-0 prose-img:mx-auto prose-a:text-[#7C6354]"
+    >
+      <!-- Back link -->
+      <div class="not-prose mb-6">
+        <button
+          onclick="history.length > 1 ? history.back() : window.location.href='/'"
+          class="text-sm text-[#7C6354] hover:text-[#2E2825] transition-colors cursor-pointer bg-transparent border-none p-0"
+          >← Back</button
+        >
+      </div>
+
+      <!-- Bilingual title -->
+      <h1 class="title my-2 text-3xl font-bold not-prose">
+        {
+          project.titleZh ? (
+            <>
+              <span data-i18n-text data-lang="en">
+                {project.title}
+              </span>
+              <span data-i18n-text data-lang="zh" class="hidden">
+                {project.titleZh}
+              </span>
+            </>
+          ) : (
+            project.title
+          )
+        }
+      </h1>
+
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2 mb-4 not-prose">
+        {
+          project.badgeZh ? (
+            <>
+              <span data-i18n-text data-lang="en" class="contents">
+                <span class="badge badge-secondary shrink-0 whitespace-nowrap">
+                  {project.badge}
+                </span>
+              </span>
+              <span data-i18n-text data-lang="zh" class="hidden contents">
+                <span class="badge badge-secondary shrink-0 whitespace-nowrap">
+                  {project.badgeZh}
+                </span>
+              </span>
+            </>
+          ) : (
+            project.badge && (
+              <span class="badge badge-secondary shrink-0 whitespace-nowrap">
+                {project.badge}
+              </span>
+            )
+          )
+        }
+        {
+          project.tagsZh ? (
+            <>
+              <span data-i18n-text data-lang="en" class="contents">
+                {project.tags?.map((tag) => (
+                  <span class="badge badge-outline">{tag}</span>
+                ))}
+              </span>
+              <span data-i18n-text data-lang="zh" class="hidden contents">
+                {project.tagsZh.map((tag) => (
+                  <span class="badge badge-outline">{tag}</span>
+                ))}
+              </span>
+            </>
+          ) : (
+            project.tags?.map((tag) => (
+              <span class="badge badge-outline">{tag}</span>
+            ))
+          )
+        }
+      </div>
+
+      {
+        project.heroImage && (
+          <div
+            class={`w-full mb-4 ${project.heroHeight ? "overflow-hidden rounded-t-xl" : "h-80 rounded-xl"}`}
+            style={
+              project.heroHeight ? `height: ${project.heroHeight}` : undefined
+            }
+          >
+            <Image
+              width={750}
+              height={600}
+              format="webp"
+              src={project.heroImage}
+              alt={project.title}
+              class={
+                project.heroImage.includes("haier")
+                  ? "w-[45%] h-full object-cover object-center mx-auto"
+                  : project.heroHeight
+                    ? "w-full h-full object-cover object-top"
+                    : "w-[80%] object-cover object-center"
+              }
+            />
+          </div>
+        )
+      }
+
+      <Content components={{ En, Zh }} />
+    </article>
+
+    <!-- Sticky TOC (shows from lg upward, only when content is wide enough) -->
+    {
+      enH2s.length > 0 && (
+        <aside class="hidden lg:flex flex-col w-16 shrink-0 sticky top-28 self-start not-prose ml-auto">
+          <span class="text-[8px] uppercase tracking-widest text-[#B5967A] font-medium mb-3">
+            <span data-i18n-text data-lang="en">
+              On this page
+            </span>
+            <span data-i18n-text data-lang="zh" class="hidden">
+              本页目录
+            </span>
+          </span>
+          <ul class="space-y-2 border-l border-[#E3DAD0] pl-3 list-none m-0 p-0">
+            {enH2s.map((h, i) => (
+              <li class="leading-tight">
+                <a
+                  href={`#${h.slug}`}
+                  data-i18n-text
+                  data-lang="en"
+                  data-target={h.slug}
+                  class="toc-link block text-[10px] py-0.5 text-[#B5967A] hover:text-[#2E2825] transition-colors no-underline"
+                >
+                  {label(h.text)}
+                </a>
+                {zhH2s[i] && (
+                  <a
+                    href={`#${zhH2s[i].slug}`}
+                    data-i18n-text
+                    data-lang="zh"
+                    data-target={zhH2s[i].slug}
+                    class="toc-link hidden text-xs py-0.5 text-[#B5967A] hover:text-[#2E2825] transition-colors no-underline"
+                  >
+                    {label(zhH2s[i].text)}
+                  </a>
+                )}
+              </li>
+            ))}
+          </ul>
+        </aside>
+      )
+    }
+  </div>
+</BaseLayout>
+
+<script>
+  function initToc() {
+    const links = document.querySelectorAll<HTMLAnchorElement>(
+      ".toc-link[data-target]",
+    );
+    if (!links.length) return;
+
+    const seen = new Set<string>();
+    const targets: HTMLElement[] = [];
+    links.forEach((link) => {
+      const id = link.getAttribute("data-target")!;
+      if (!seen.has(id)) {
+        seen.add(id);
+        const el = document.getElementById(id);
+        if (el) targets.push(el);
+      }
+    });
+
+    function setActive(activeId: string) {
+      links.forEach((link) => {
+        const isActive = link.getAttribute("data-target") === activeId;
+        link.classList.toggle("font-semibold", isActive);
+        link.style.color = isActive ? "#7C6354" : "";
+        link.style.borderLeft = isActive ? "2px solid #7C6354" : "";
+        link.style.paddingLeft = isActive ? "6px" : "";
+        link.style.marginLeft = isActive ? "-3px" : "";
+      });
+    }
+
+    if (targets.length) setActive(targets[0].id);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+        if (visible.length > 0) setActive(visible[0].target.id);
+      },
+      { rootMargin: "0px 0px -60% 0px", threshold: 0.1 },
+    );
+
+    targets.forEach((t) => observer.observe(t));
+  }
+
+  document.addEventListener("astro:page-load", initToc);
+  document.addEventListener("DOMContentLoaded", initToc);
+</script>

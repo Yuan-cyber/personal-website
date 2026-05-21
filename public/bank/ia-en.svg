@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1222" height="1386" viewBox="0 0 1222 1386" xmlns="http://www.w3.org/2000/svg">
+<defs><style>text{font-family:"PingFang SC","Inter","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;}</style></defs>
+<rect width="1222" height="1296" fill="#FAF8F4"/>
+<rect x="511" y="80" width="200" height="40" rx="10" fill="#2E2825" stroke="#2E2825" stroke-width="1"/>
+<text x="611" y="100" font-size="13" fill="#FFFFFF" font-weight="700" text-anchor="middle" dominant-baseline="middle">Fujian Rural Commercial Bank</text>
+<line x1="611" y1="120" x2="611" y2="140" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="143" y1="140" x2="1079" y2="140" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="143" y1="140" x2="143" y2="160" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="60" y="160" width="166" height="36" rx="9" fill="#7C6354" stroke="#7C6354" stroke-width="1"/>
+<text x="143" y="172" font-size="11" fill="#FFFFFF" font-weight="700" text-anchor="middle" dominant-baseline="middle">Home</text>
+<text x="143" y="185" font-size="8.5" fill="rgba(255,255,255,0.75)" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Aggregation hub</text>
+<line x1="143" y1="196" x2="143" y2="212" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="66" y="212" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="143" y="226" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Quick Actions</text>
+<line x1="143" y1="240" x2="143" y2="354" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="143" y1="264" x2="72" y2="264" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="72" y="252" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="143" y="264" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Scan QR</text>
+<line x1="143" y1="294" x2="72" y2="294" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="72" y="282" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="143" y="294" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Pay &amp; Collect</text>
+<line x1="143" y1="324" x2="72" y2="324" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="72" y="312" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="143" y="324" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Transfer</text>
+<line x1="143" y1="354" x2="72" y2="354" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="72" y="342" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="143" y="354" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Credit Card</text>
+<line x1="143" y1="372" x2="143" y2="388" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="66" y="388" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="143" y="402" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Quick Grid</text>
+<line x1="143" y1="416" x2="143" y2="680" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="143" y1="440" x2="72" y2="440" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="72" y="428" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="143" y="440" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">e-Loan</text>
+<line x1="143" y1="470" x2="72" y2="470" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="72" y="458" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="143" y="470" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Transactions</text>
+<line x1="143" y1="500" x2="72" y2="500" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="72" y="488" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="143" y="500" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Account Mgmt</text>
+<line x1="143" y1="530" x2="72" y2="530" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="72" y="518" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="143" y="530" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Cash Advance</text>
+<line x1="143" y1="560" x2="72" y2="560" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="72" y="548" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="143" y="560" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Medical Ins.</text>
+<line x1="143" y1="590" x2="72" y2="590" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="72" y="578" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="143" y="590" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Phone Topup</text>
+<line x1="143" y1="620" x2="72" y2="620" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="72" y="608" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="143" y="620" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">e-Shop</text>
+<line x1="143" y1="650" x2="72" y2="650" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="72" y="638" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="143" y="650" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">More Apps</text>
+<line x1="143" y1="680" x2="72" y2="680" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="72" y="668" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="143" y="680" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Care Mode</text>
+<line x1="143" y1="698" x2="143" y2="714" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="66" y="714" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="143" y="728" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Info Feed</text>
+<line x1="143" y1="742" x2="143" y2="886" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="143" y1="886" x2="72" y2="886" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="72" y="874" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="143" y="886" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Announcements</text>
+<line x1="143" y1="766" x2="72" y2="766" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="72" y="754" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="143" y="766" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Deposit Market</text>
+<line x1="143" y1="796" x2="72" y2="796" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="72" y="784" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="143" y="796" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Loan Products</text>
+<line x1="143" y1="826" x2="72" y2="826" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="72" y="814" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="143" y="826" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Local Services</text>
+<line x1="143" y1="856" x2="72" y2="856" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="72" y="844" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="143" y="856" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">News</text>
+<line x1="377" y1="140" x2="377" y2="160" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="294" y="160" width="166" height="36" rx="9" fill="#7C6354" stroke="#7C6354" stroke-width="1"/>
+<text x="377" y="178" font-size="11" fill="#FFFFFF" font-weight="700" text-anchor="middle" dominant-baseline="middle">Deposits / Wealth</text>
+<line x1="377" y1="196" x2="377" y2="212" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="300" y="212" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="377" y="226" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">My Accounts</text>
+<line x1="377" y1="240" x2="377" y2="354" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="377" y1="264" x2="306" y2="264" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="306" y="252" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="377" y="264" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Total Assets</text>
+<line x1="377" y1="294" x2="306" y2="294" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="306" y="282" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="377" y="294" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Savings Card List</text>
+<line x1="377" y1="324" x2="306" y2="324" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="306" y="312" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="377" y="324" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">View Details</text>
+<line x1="377" y1="354" x2="306" y2="354" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="306" y="342" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="377" y="354" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Transfer</text>
+<line x1="377" y1="372" x2="377" y2="388" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="300" y="388" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="377" y="402" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Deposit Products</text>
+<line x1="377" y1="416" x2="377" y2="530" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="377" y1="440" x2="306" y2="440" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="306" y="428" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="377" y="440" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Large CD</text>
+<line x1="377" y1="470" x2="306" y2="470" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="306" y="458" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="377" y="470" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Fixed Deposit</text>
+<line x1="377" y1="500" x2="306" y2="500" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="306" y="488" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="377" y="500" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Flex Deposit</text>
+<line x1="377" y1="530" x2="306" y2="530" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="306" y="518" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="377" y="530" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Deposit Ops</text>
+<line x1="377" y1="548" x2="377" y2="564" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="300" y="564" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="377" y="578" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Investment</text>
+<line x1="377" y1="592" x2="377" y2="706" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="377" y1="616" x2="306" y2="616" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="306" y="604" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="377" y="616" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">FJCB Wealth Mgmt</text>
+<line x1="377" y1="646" x2="306" y2="646" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="306" y="634" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="377" y="646" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">3rd Party Wealth</text>
+<line x1="377" y1="676" x2="306" y2="676" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="306" y="664" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="377" y="676" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Funds</text>
+<line x1="377" y1="706" x2="306" y2="706" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="306" y="694" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="377" y="706" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Insurance</text>
+<line x1="377" y1="724" x2="377" y2="740" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="300" y="740" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="377" y="754" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">More Assets</text>
+<line x1="377" y1="768" x2="377" y2="882" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="377" y1="792" x2="306" y2="792" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="306" y="780" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="377" y="792" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Property Rights</text>
+<line x1="377" y1="822" x2="306" y2="822" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="306" y="810" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="377" y="822" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Land Rights</text>
+<line x1="377" y1="852" x2="306" y2="852" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="306" y="840" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="377" y="852" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Marine Rights</text>
+<line x1="377" y1="882" x2="306" y2="882" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="306" y="870" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="377" y="882" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Forest Rights</text>
+<line x1="611" y1="140" x2="611" y2="160" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="528" y="160" width="166" height="36" rx="9" fill="#7C6354" stroke="#7C6354" stroke-width="1"/>
+<text x="611" y="178" font-size="11" fill="#FFFFFF" font-weight="700" text-anchor="middle" dominant-baseline="middle">Loans / Credit</text>
+<line x1="611" y1="196" x2="611" y2="212" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="537" y="212" width="148" height="26" rx="5" fill="#B5967A" stroke="#B5967A" stroke-width="1"/>
+<text x="611" y="225" font-size="9.5" fill="#FFFFFF" font-weight="600" text-anchor="middle" dominant-baseline="middle">Loans Tab</text>
+<line x1="611" y1="238" x2="611" y2="254" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="534" y="254" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="611" y="268" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">My Loans</text>
+<line x1="611" y1="282" x2="611" y2="426" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="611" y1="306" x2="540" y2="306" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="294" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="306" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Inclusive Finance Card</text>
+<line x1="611" y1="336" x2="540" y2="336" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="324" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="336" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Quick e-Loan</text>
+<line x1="611" y1="366" x2="540" y2="366" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="354" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="366" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Car e-Loan</text>
+<line x1="611" y1="396" x2="540" y2="396" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="384" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="396" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Revolving Loan</text>
+<line x1="611" y1="426" x2="540" y2="426" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="414" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="426" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">...</text>
+<line x1="611" y1="444" x2="611" y2="460" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="534" y="460" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="611" y="474" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Apply for Loan</text>
+<line x1="611" y1="488" x2="611" y2="602" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="611" y1="512" x2="540" y2="512" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="500" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="512" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Business Loan</text>
+<line x1="611" y1="542" x2="540" y2="542" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="530" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="542" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Consumer Loan</text>
+<line x1="611" y1="572" x2="540" y2="572" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="560" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="572" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Mortgage Loan</text>
+<line x1="611" y1="602" x2="540" y2="602" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="590" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="602" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">...</text>
+<line x1="611" y1="620" x2="611" y2="636" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="534" y="636" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="611" y="650" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Consultation</text>
+<line x1="611" y1="664" x2="611" y2="688" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="611" y1="688" x2="540" y2="688" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="676" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="688" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Relationship Mgr</text>
+<line x1="611" y1="706" x2="611" y2="722" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="537" y="722" width="148" height="26" rx="5" fill="#B5967A" stroke="#B5967A" stroke-width="1"/>
+<text x="611" y="735" font-size="9.5" fill="#FFFFFF" font-weight="600" text-anchor="middle" dominant-baseline="middle">Credit Card Tab</text>
+<line x1="611" y1="748" x2="611" y2="764" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="534" y="764" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="611" y="778" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">My Credit Card</text>
+<line x1="611" y1="792" x2="611" y2="876" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="611" y1="816" x2="540" y2="816" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="804" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="816" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Bill Query</text>
+<line x1="611" y1="846" x2="540" y2="846" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="834" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="846" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Installment</text>
+<line x1="611" y1="876" x2="540" y2="876" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="864" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="876" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Repayment</text>
+<line x1="611" y1="894" x2="611" y2="910" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="534" y="910" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="611" y="924" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Card Management</text>
+<line x1="611" y1="938" x2="611" y2="1052" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="611" y1="962" x2="540" y2="962" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="950" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="962" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Credit Installment</text>
+<line x1="611" y1="992" x2="540" y2="992" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="980" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="992" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Reward Cash</text>
+<line x1="611" y1="1022" x2="540" y2="1022" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="1010" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="1022" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Repayment Method</text>
+<line x1="611" y1="1052" x2="540" y2="1052" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="1040" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="1052" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Phone / Password</text>
+<line x1="611" y1="1070" x2="611" y2="1086" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="534" y="1086" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="611" y="1100" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Apply for Card</text>
+<line x1="611" y1="1114" x2="611" y2="1198" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="611" y1="1138" x2="540" y2="1138" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="1126" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="1138" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Rural Revit. Card</text>
+<line x1="611" y1="1168" x2="540" y2="1168" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="1156" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="1168" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Online Gold Card</text>
+<line x1="611" y1="1198" x2="540" y2="1198" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="1186" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="1198" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">...</text>
+<line x1="611" y1="1216" x2="611" y2="1232" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="534" y="1232" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="611" y="1246" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Consultation</text>
+<line x1="611" y1="1260" x2="611" y2="1284" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="611" y1="1284" x2="540" y2="1284" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="540" y="1272" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="611" y="1284" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Relationship Mgr</text>
+<line x1="845" y1="140" x2="845" y2="160" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="762" y="160" width="166" height="36" rx="9" fill="#7C6354" stroke="#7C6354" stroke-width="1"/>
+<text x="845" y="178" font-size="11" fill="#FFFFFF" font-weight="700" text-anchor="middle" dominant-baseline="middle">Life Services</text>
+<line x1="845" y1="196" x2="845" y2="212" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="768" y="212" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="845" y="226" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Bill Payment</text>
+<line x1="845" y1="240" x2="845" y2="474" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="845" y1="264" x2="774" y2="264" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="774" y="252" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="845" y="264" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">My Bills</text>
+<line x1="845" y1="294" x2="774" y2="294" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="774" y="282" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="845" y="294" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Payment History</text>
+<line x1="845" y1="324" x2="774" y2="324" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="774" y="312" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="845" y="324" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Auto Pay</text>
+<line x1="845" y1="354" x2="774" y2="354" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="774" y="342" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="845" y="354" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Phone Topup</text>
+<line x1="845" y1="384" x2="774" y2="384" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="774" y="372" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="845" y="384" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Water / Electricity</text>
+<line x1="845" y1="414" x2="774" y2="414" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="774" y="402" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="845" y="414" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">School Fees</text>
+<line x1="845" y1="444" x2="774" y2="444" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="774" y="432" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="845" y="444" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Traffic Fines</text>
+<line x1="845" y1="474" x2="774" y2="474" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="774" y="462" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="845" y="474" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">...</text>
+<line x1="845" y1="492" x2="845" y2="508" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="768" y="508" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="845" y="522" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Gov. Services</text>
+<line x1="845" y1="536" x2="845" y2="590" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="845" y1="560" x2="774" y2="560" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="774" y="548" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="845" y="560" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Medical Insurance</text>
+<line x1="845" y1="590" x2="774" y2="590" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="774" y="578" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="845" y="590" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Digital Social Security</text>
+<line x1="845" y1="608" x2="845" y2="624" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="768" y="624" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="845" y="638" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Local Services</text>
+<line x1="845" y1="652" x2="845" y2="766" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="845" y1="676" x2="774" y2="676" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="774" y="664" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="845" y="676" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Train Tickets</text>
+<line x1="845" y1="706" x2="774" y2="706" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="774" y="694" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="845" y="706" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Food Delivery</text>
+<line x1="845" y1="736" x2="774" y2="736" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="774" y="724" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="845" y="736" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Gas Discount</text>
+<line x1="845" y1="766" x2="774" y2="766" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="774" y="754" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="845" y="766" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Movie Tickets</text>
+<line x1="845" y1="784" x2="845" y2="800" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="768" y="800" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="845" y="814" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Events / Shopping</text>
+<line x1="1079" y1="140" x2="1079" y2="160" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="996" y="160" width="166" height="36" rx="9" fill="#7C6354" stroke="#7C6354" stroke-width="1"/>
+<text x="1079" y="178" font-size="11" fill="#FFFFFF" font-weight="700" text-anchor="middle" dominant-baseline="middle">My</text>
+<line x1="1079" y1="196" x2="1079" y2="212" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1002" y="212" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="1079" y="226" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Account</text>
+<line x1="1079" y1="240" x2="1079" y2="324" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="1079" y1="264" x2="1008" y2="264" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1008" y="252" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="1079" y="264" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Profile Management</text>
+<line x1="1079" y1="294" x2="1008" y2="294" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1008" y="282" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="1079" y="294" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Security Certificate</text>
+<line x1="1079" y1="324" x2="1008" y2="324" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1008" y="312" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="1079" y="324" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Secure Logout</text>
+<line x1="1079" y1="342" x2="1079" y2="358" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1002" y="358" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="1079" y="372" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Rewards Center</text>
+<line x1="1079" y1="386" x2="1079" y2="500" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="1079" y1="410" x2="1008" y2="410" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1008" y="398" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="1079" y="410" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">My Center</text>
+<line x1="1079" y1="440" x2="1008" y2="440" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1008" y="428" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="1079" y="440" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Coupons</text>
+<line x1="1079" y1="470" x2="1008" y2="470" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1008" y="458" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="1079" y="470" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Card Benefits</text>
+<line x1="1079" y1="500" x2="1008" y2="500" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1008" y="488" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="1079" y="500" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Enrolled Events</text>
+<line x1="1079" y1="518" x2="1079" y2="534" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1002" y="534" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="1079" y="548" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Transaction Limits</text>
+<line x1="1079" y1="562" x2="1079" y2="676" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="1079" y1="586" x2="1008" y2="586" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1008" y="574" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="1079" y="586" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Transfer Limit</text>
+<line x1="1079" y1="616" x2="1008" y2="616" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1008" y="604" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="1079" y="616" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Payment Limit</text>
+<line x1="1079" y1="646" x2="1008" y2="646" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1008" y="634" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="1079" y="646" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Security Lock</text>
+<line x1="1079" y1="676" x2="1008" y2="676" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1008" y="664" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="1079" y="676" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Password Unlock</text>
+<line x1="1079" y1="694" x2="1079" y2="710" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1002" y="710" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="1079" y="724" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Login Settings</text>
+<line x1="1079" y1="738" x2="1079" y2="852" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="1079" y1="762" x2="1008" y2="762" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1008" y="750" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="1079" y="762" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Device Auth</text>
+<line x1="1079" y1="792" x2="1008" y2="792" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1008" y="780" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="1079" y="792" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Biometric Login</text>
+<line x1="1079" y1="822" x2="1008" y2="822" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1008" y="810" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="1079" y="822" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Login History</text>
+<line x1="1079" y1="852" x2="1008" y2="852" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1008" y="840" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="1079" y="852" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Username / Password</text>
+<line x1="1079" y1="870" x2="1079" y2="886" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1002" y="886" width="154" height="28" rx="5" fill="#F0EBE3" stroke="#D5C5B8" stroke-width="1"/>
+<text x="1079" y="900" font-size="10" fill="#5C4A3D" font-weight="600" text-anchor="middle" dominant-baseline="middle">Other</text>
+<line x1="1079" y1="914" x2="1079" y2="998" stroke="#C8B5A6" stroke-width="1.2"/>
+<line x1="1079" y1="938" x2="1008" y2="938" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1008" y="926" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="1079" y="938" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Message Center</text>
+<line x1="1079" y1="968" x2="1008" y2="968" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1008" y="956" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="1079" y="968" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Version</text>
+<line x1="1079" y1="998" x2="1008" y2="998" stroke="#C8B5A6" stroke-width="1.2"/>
+<rect x="1008" y="986" width="142" height="24" rx="4" fill="#FFFFFF" stroke="#E3DAD0" stroke-width="0.8"/>
+<text x="1079" y="998" font-size="9" fill="#2E2825" font-weight="normal" text-anchor="middle" dominant-baseline="middle">Feedback</text>
+<rect x="60" y="1338" width="1102" height="28" rx="5" fill="#EDE8E2" stroke="#D5C5B8" stroke-width="1"/>
+<text x="611" y="1352" font-size="9.5" fill="#B5967A" font-weight="500" text-anchor="middle" dominant-baseline="middle">Global Persistent  :  Customer Service (every page, top-right)  ·  Notifications  ·  Search</text>
+</svg>

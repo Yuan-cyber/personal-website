@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="关于" sideBarActiveItemID="about">
+  <div class="max-w-[640px] pt-16 pb-16">
+    <section class="mb-16">
+      <h2
+        style="font-family:'Space Mono',ui-monospace,monospace;font-weight:400;font-size:2rem;line-height:1.1;letter-spacing:-0.03em;color:#2E2825;margin-top:0;margin-bottom:1.5rem;"
+      >
+        关于本站
+      </h2>
+      <p class="text-[#5C4A3D] leading-relaxed mb-4">
+        这是我的作品集——涵盖用户体验研究与设计作品，以及一些出于好奇心搭建的个人项目。内容横跨端到端的研究咨询项目、产品重设计与全栈开发。
+      </p>
+      <p class="text-[#5C4A3D] leading-relaxed">
+        网站基于 Astro 构建，部署在 Cloudflare Pages。
+      </p>
+    </section>
+
+    <div class="border-t border-[#E3DAD0] mb-16"></div>
+
+    <section class="mb-16">
+      <h2
+        style="font-family:'Space Mono',ui-monospace,monospace;font-weight:400;font-size:2rem;line-height:1.1;letter-spacing:-0.03em;color:#2E2825;margin-top:0;margin-bottom:1.5rem;"
+      >
+        关于我
+      </h2>
+    </section>
+
+    <a href="mailto:zhao-yuan-zi@163.com" class="btn btn-sm btn-outline"
+      >联系我</a
+    >
+  </div>
+
+  <script is:inline>
+    try {
+      localStorage.setItem("site-lang", "zh");
+    } catch (e) {}
+    document.querySelector('button[data-lang="en"]')?.addEventListener(
+      "click",
+      function (e) {
+        e.stopImmediatePropagation();
+        window.location.href = "/about";
+      },
+      true,
+    );
+  </script>
+</BaseLayout>

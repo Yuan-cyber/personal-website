@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Card from "../../components/Card.astro";
+import { getCollection } from "astro:content";
+import createSlug from "../../lib/createSlug";
+
+const projects = await getCollection("project");
+---
+
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
+  <div class="text-3xl w-full font-bold mb-6">
+    <span data-i18n-text data-lang="en">Projects</span>
+    <span data-i18n-text data-lang="zh" class="hidden">项目</span>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {
+      projects.map((project) => (
+        <Card
+          title={project.data.title}
+          titleZh={project.data.titleZh}
+          img={project.data.heroImage}
+          desc={project.data.description}
+          descZh={project.data.descriptionZh}
+          url={"/projects/" + createSlug(project.data.title, project.slug)}
+          badge={project.data.badge}
+          tags={project.data.tags}
+        />
+      ))
+    }
+  </div>
+</BaseLayout>

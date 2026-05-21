@@ -1,65 +1,520 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HorizontalCard from "../components/HorizontalCard.astro";
+
 import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug"
+import createSlug from "../lib/createSlug";
 
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
-const last_posts = posts.slice(0, 3);
+const projects = await getCollection("project");
+const last_projects = projects.slice(0, 4);
 ---
 
-<BaseLayout sideBarActiveItemID="home">
-  <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
-    <div class="py-2">
-      <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
-      </text>
+<BaseLayout sideBarActiveItemID="home" wider={true}>
+  <div
+    class="relative min-h-[calc(100vh-104px)] flex flex-col justify-center text-center"
+    id="hero-section"
+  >
+    <svg
+      id="plant-svg"
+      class="absolute top-0 left-0 right-0 pointer-events-none select-none"
+      style="height:calc(100% + 120px); width:100%; will-change:transform"
+      viewBox="0 0 1100 780"
+      preserveAspectRatio="xMidYMax meet"
+      overflow="visible"
+      aria-hidden="true"
+    >
+      <!-- LEFT GROUP 1: tall stems, sway together -->
+      <g opacity="0.42">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="-1.2,80,670; 1.2,80,670; -1.2,80,670"
+          dur="6s"
+          begin="3.5s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keySplines="0.45 0 0.55 1;0.45 0 0.55 1"></animateTransform>
+        <!-- Stem 1: tallest -->
+        <path id="l1" d="M 90,670 C 55,500 110,310 68,95" fill="none"></path>
+        <text font-size="11" fill="#7A8C6A" font-family="Inter,sans-serif"
+          ><textPath href="#l1"
+            >stem stem stem stem stem stem stem stem stem stem stem stem stem
+            stem stem stem stem stem stem stem stem stem stem stem stem stem
+            stem stem stem stem stem stem stem stem stem stem stem stem stem
+            stem stem stem stem stem
+          </textPath></text
+        >
+        <path
+          id="l1f-o"
+          d="M 68,95 m-55,0 a55,55 0 1,0 110,0 a55,55 0 1,0-110,0"
+          fill="none"></path>
+        <text font-size="8.5" fill="#7C3F2C" font-family="Inter,sans-serif"
+          ><textPath href="#l1f-o"
+            >ux · design · research · bloom · ux · design · research · bloom ·
+            ux · design · research · bloom · ux · design · research · bloom · ux
+            · design ·
+          </textPath></text
+        >
+        <path
+          id="l1f-m"
+          d="M 68,95 m-35,0 a35,35 0 1,0 70,0 a35,35 0 1,0-70,0"
+          fill="none"></path>
+        <text font-size="8" fill="#7C3F2C" font-family="Inter,sans-serif"
+          ><textPath href="#l1f-m"
+            >yuan · zhao · ux · yuan · zhao · ux · yuan · zhao · ux · yuan ·
+            zhao · ux ·
+          </textPath></text
+        >
+        <path
+          id="l1f-i"
+          d="M 68,95 m-18,0 a18,18 0 1,0 36,0 a18,18 0 1,0-36,0"
+          fill="none"></path>
+        <text font-size="7.5" fill="#7C3F2C" font-family="Inter,sans-serif"
+          ><textPath href="#l1f-i"
+            >yz · yz · yz · yz · yz · yz · yz · yz ·
+          </textPath></text
+        >
+        <!-- Stem 2: medium-tall -->
+        <path id="l2" d="M 55,670 C 38,540 65,400 42,240" fill="none"></path>
+        <text font-size="10" fill="#7A8C6A" font-family="Inter,sans-serif"
+          ><textPath href="#l2"
+            >stem stem stem stem stem stem stem stem stem stem stem stem stem
+            stem stem stem stem stem stem stem stem stem stem stem stem stem
+            stem stem stem stem stem stem
+          </textPath></text
+        >
+        <path
+          id="l2f-o"
+          d="M 42,240 m-28,0 a28,28 0 1,0 56,0 a28,28 0 1,0-56,0"
+          fill="none"></path>
+        <text font-size="8" fill="#7C3F2C" font-family="Inter,sans-serif"
+          ><textPath href="#l2f-o"
+            >bloom · ux · design · bloom · ux · design · bloom · ux · design ·
+            bloom ·
+          </textPath></text
+        >
+        <path
+          id="l2f-i"
+          d="M 42,240 m-14,0 a14,14 0 1,0 28,0 a14,14 0 1,0-28,0"
+          fill="none"></path>
+        <text font-size="7.5" fill="#7C3F2C" font-family="Inter,sans-serif"
+          ><textPath href="#l2f-i"
+            >yz · yz · yz · yz · yz · yz · yz ·
+          </textPath></text
+        >
+      </g>
+
+      <!-- LEFT GROUP 2: medium stems -->
+      <g opacity="0.36">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="1.0,45,670; -1.0,45,670; 1.0,45,670"
+          dur="5.5s"
+          begin="4s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keySplines="0.45 0 0.55 1;0.45 0 0.55 1"></animateTransform>
+        <!-- Stem 3: medium -->
+        <path id="l3" d="M 30,670 C 18,580 42,468 22,340" fill="none"></path>
+        <text font-size="10" fill="#7A8C6A" font-family="Inter,sans-serif"
+          ><textPath href="#l3"
+            >grow grow grow grow grow grow grow grow grow grow grow grow grow
+            grow grow grow grow grow grow grow grow grow grow grow grow grow
+            grow grow grow grow
+          </textPath></text
+        >
+        <path
+          id="l3f-o"
+          d="M 22,340 m-32,0 a32,32 0 1,0 64,0 a32,32 0 1,0-64,0"
+          fill="none"></path>
+        <text font-size="8" fill="#7C3F2C" font-family="Inter,sans-serif"
+          ><textPath href="#l3f-o"
+            >research · ux · bloom · design · research · ux · bloom · design ·
+            research · ux ·
+          </textPath></text
+        >
+        <path
+          id="l3f-i"
+          d="M 22,340 m-16,0 a16,16 0 1,0 32,0 a16,16 0 1,0-32,0"
+          fill="none"></path>
+        <text font-size="7.5" fill="#7C3F2C" font-family="Inter,sans-serif"
+          ><textPath href="#l3f-i"
+            >ux · yz · ux · yz · ux · yz · ux ·
+          </textPath></text
+        >
+        <!-- Stem 4: short -->
+        <path id="l4" d="M 148,670 C 140,605 158,538 150,468" fill="none"
+        ></path>
+        <text font-size="10" fill="#7A8C6A" font-family="Inter,sans-serif"
+          ><textPath href="#l4"
+            >stem stem stem stem stem stem stem stem stem stem stem stem stem
+            stem stem stem stem stem stem stem stem stem
+          </textPath></text
+        >
+        <path
+          id="l4f"
+          d="M 150,468 m-20,0 a20,20 0 1,0 40,0 a20,20 0 1,0-40,0"
+          fill="none"></path>
+        <text font-size="7.5" fill="#7C3F2C" font-family="Inter,sans-serif"
+          ><textPath href="#l4f"
+            >bloom · ux · bloom · ux · bloom · ux · bloom · ux · bloom · ux ·
+          </textPath></text
+        >
+        <!-- Stem 5: tall secondary -->
+        <path id="l5" d="M 115,670 C 105,560 125,440 110,310" fill="none"
+        ></path>
+        <text font-size="10" fill="#7A8C6A" font-family="Inter,sans-serif"
+          ><textPath href="#l5"
+            >grow grow grow grow grow grow grow grow grow grow grow grow grow
+            grow grow grow grow grow grow grow grow grow grow grow grow grow
+          </textPath></text
+        >
+        <path
+          id="l5f"
+          d="M 110,310 m-22,0 a22,22 0 1,0 44,0 a22,22 0 1,0-44,0"
+          fill="none"></path>
+        <text font-size="7.5" fill="#7C3F2C" font-family="Inter,sans-serif"
+          ><textPath href="#l5f"
+            >design · bloom · ux · design · bloom · ux · design · bloom · ux ·
+          </textPath></text
+        >
+      </g>
+
+      <!-- RIGHT GROUP 1: tall stems -->
+      <g opacity="0.42">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="1.2,1030,670; -1.2,1030,670; 1.2,1030,670"
+          dur="6.5s"
+          begin="3.8s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keySplines="0.45 0 0.55 1;0.45 0 0.55 1"></animateTransform>
+        <!-- Stem 6: tallest right -->
+        <path id="r1" d="M 1015,670 C 1050,480 998,275 1040,88" fill="none"
+        ></path>
+        <text font-size="11" fill="#7A8C6A" font-family="Inter,sans-serif"
+          ><textPath href="#r1"
+            >stem stem stem stem stem stem stem stem stem stem stem stem stem
+            stem stem stem stem stem stem stem stem stem stem stem stem stem
+            stem stem stem stem stem stem stem stem stem stem stem stem stem
+            stem stem stem stem stem
+          </textPath></text
+        >
+        <path
+          id="r1f-o"
+          d="M 1040,88 m-60,0 a60,60 0 1,0 120,0 a60,60 0 1,0-120,0"
+          fill="none"></path>
+        <text font-size="8.5" fill="#7C3F2C" font-family="Inter,sans-serif"
+          ><textPath href="#r1f-o"
+            >ux · research · bloom · design · create · ux · research · bloom ·
+            design · create · ux · research · bloom · design · create · ux ·
+            research · bloom · design ·
+          </textPath></text
+        >
+        <path
+          id="r1f-m"
+          d="M 1040,88 m-38,0 a38,38 0 1,0 76,0 a38,38 0 1,0-76,0"
+          fill="none"></path>
+        <text font-size="8" fill="#7C3F2C" font-family="Inter,sans-serif"
+          ><textPath href="#r1f-m"
+            >design · bloom · ux · design · bloom · ux · design · bloom · ux ·
+            design · bloom · ux ·
+          </textPath></text
+        >
+        <path
+          id="r1f-i"
+          d="M 1040,88 m-20,0 a20,20 0 1,0 40,0 a20,20 0 1,0-40,0"
+          fill="none"></path>
+        <text font-size="7.5" fill="#7C3F2C" font-family="Inter,sans-serif"
+          ><textPath href="#r1f-i"
+            >yz · yz · yz · yz · yz · yz · yz · yz ·
+          </textPath></text
+        >
+        <!-- Stem 7: medium-tall right -->
+        <path id="r2" d="M 1048,670 C 1062,545 1038,408 1055,268" fill="none"
+        ></path>
+        <text font-size="10" fill="#7A8C6A" font-family="Inter,sans-serif"
+          ><textPath href="#r2"
+            >stem stem stem stem stem stem stem stem stem stem stem stem stem
+            stem stem stem stem stem stem stem stem stem stem stem stem stem
+            stem stem stem stem stem stem
+          </textPath></text
+        >
+        <path
+          id="r2f-o"
+          d="M 1055,268 m-28,0 a28,28 0 1,0 56,0 a28,28 0 1,0-56,0"
+          fill="none"></path>
+        <text font-size="8" fill="#7C3F2C" font-family="Inter,sans-serif"
+          ><textPath href="#r2f-o"
+            >bloom · ux · design · bloom · ux · design · bloom · ux · design ·
+            bloom ·
+          </textPath></text
+        >
+        <path
+          id="r2f-i"
+          d="M 1055,268 m-14,0 a14,14 0 1,0 28,0 a14,14 0 1,0-28,0"
+          fill="none"></path>
+        <text font-size="7.5" fill="#7C3F2C" font-family="Inter,sans-serif"
+          ><textPath href="#r2f-i"
+            >yz · yz · yz · yz · yz · yz · yz ·
+          </textPath></text
+        >
+      </g>
+
+      <!-- RIGHT GROUP 2: medium stems -->
+      <g opacity="0.34">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          values="-1.0,1078,670; 1.0,1078,670; -1.0,1078,670"
+          dur="6s"
+          begin="5s"
+          repeatCount="indefinite"
+          calcMode="spline"
+          keySplines="0.45 0 0.55 1;0.45 0 0.55 1"></animateTransform>
+        <!-- Stem 8: medium right -->
+        <path id="r3" d="M 1082,670 C 1096,572 1068,455 1088,318" fill="none"
+        ></path>
+        <text font-size="10" fill="#7A8C6A" font-family="Inter,sans-serif"
+          ><textPath href="#r3"
+            >grow grow grow grow grow grow grow grow grow grow grow grow grow
+            grow grow grow grow grow grow grow grow grow grow grow grow grow
+            grow grow grow grow
+          </textPath></text
+        >
+        <path
+          id="r3f-o"
+          d="M 1088,318 m-32,0 a32,32 0 1,0 64,0 a32,32 0 1,0-64,0"
+          fill="none"></path>
+        <text font-size="8" fill="#7C3F2C" font-family="Inter,sans-serif"
+          ><textPath href="#r3f-o"
+            >research · ux · bloom · design · research · ux · bloom · design ·
+            research · ux ·
+          </textPath></text
+        >
+        <path
+          id="r3f-i"
+          d="M 1088,318 m-16,0 a16,16 0 1,0 32,0 a16,16 0 1,0-32,0"
+          fill="none"></path>
+        <text font-size="7.5" fill="#7C3F2C" font-family="Inter,sans-serif"
+          ><textPath href="#r3f-i"
+            >ux · yz · ux · yz · ux · yz · ux ·
+          </textPath></text
+        >
+        <!-- Stem 9: short right — moved further right -->
+        <path id="r4" d="M 1112,670 C 1104,600 1118,525 1110,448" fill="none"
+        ></path>
+        <text font-size="10" fill="#7A8C6A" font-family="Inter,sans-serif"
+          ><textPath href="#r4"
+            >stem stem stem stem stem stem stem stem stem stem stem stem stem
+            stem stem stem stem stem stem stem stem stem
+          </textPath></text
+        >
+        <path
+          id="r4f"
+          d="M 1110,448 m-20,0 a20,20 0 1,0 40,0 a20,20 0 1,0-40,0"
+          fill="none"></path>
+        <text font-size="7.5" fill="#7C3F2C" font-family="Inter,sans-serif"
+          ><textPath href="#r4f"
+            >bloom · ux · bloom · ux · bloom · ux · bloom · ux · bloom · ux ·
+          </textPath></text
+        >
+        <!-- Stem 10: tall secondary right — moved further left -->
+        <path id="r5" d="M 1048,670 C 1036,560 1052,440 1038,302" fill="none"
+        ></path>
+        <text font-size="10" fill="#7A8C6A" font-family="Inter,sans-serif"
+          ><textPath href="#r5"
+            >grow grow grow grow grow grow grow grow grow grow grow grow grow
+            grow grow grow grow grow grow grow grow grow grow grow grow grow
+          </textPath></text
+        >
+        <path
+          id="r5f"
+          d="M 1038,302 m-22,0 a22,22 0 1,0 44,0 a22,22 0 1,0-44,0"
+          fill="none"></path>
+        <text font-size="7.5" fill="#7C3F2C" font-family="Inter,sans-serif"
+          ><textPath href="#r5f"
+            >design · bloom · ux · design · bloom · ux · design · bloom · ux ·
+          </textPath></text
+        >
+      </g>
+    </svg>
+    <div class="text-base py-1">
+      <span data-i18n-text data-lang="en">Hi there, I'm</span>
+      <span data-i18n-text data-lang="zh" class="hidden">你好，我是</span>
     </div>
-    <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
+    <div
+      class="text-4xl font-bold"
+      style="font-family:'Space Mono',ui-monospace,monospace"
+      id="hero-name"
+    >
+      <span data-i18n-text data-lang="en"
+        ><span class="letter">Y</span><span class="letter">u</span><span
+          class="extra-a extra-a-yuan"
+          aria-hidden="true">a</span
+        ><span class="an-group"
+          ><span class="letter letter-a yuan-a">a</span><span class="letter"
+            >n</span
+          ></span
+        >
+        <span class="letter">Z</span><span class="letter">h</span><span
+          class="extra-a extra-a-zhao"
+          aria-hidden="true">a</span
+        ><span class="ao-group"
+          ><span class="letter letter-a zhao-a">a</span><span class="letter"
+            >o</span
+          ></span
+        ></span
+      >
+      <span data-i18n-text data-lang="zh" class="hidden"
+        ><span class="letter zh-char zh-char-1">赵</span><span
+          class="letter zh-char zh-char-2">元</span
+        ></span
+      >
+    </div>
+    <div
+      class="text-2xl py-3 font-semibold"
+      style="font-family:'Space Mono',ui-monospace,monospace"
+    >
+      <span data-i18n-text data-lang="en"
+        >A researcher A designer A developer</span
+      >
+      <span data-i18n-text data-lang="zh" class="hidden"
+        >用户体验与开发双背景</span
+      >
+    </div>
+    <div class="py-2 max-w-xl mx-auto">
+      <p class="text-base leading-relaxed">
+        <span data-i18n-text data-lang="en">
+          I care deeply about products, and the people who use them.
+        </span>
+        <span data-i18n-text data-lang="zh" class="hidden">
+          对人类需求深度好奇
+        </span>
+      </p>
+    </div>
+    <div class="mt-8 flex justify-center gap-5">
+      <a class="btn" id="about-btn" href="/cv">
+        <span data-i18n-text data-lang="en">About</span>
+        <span data-i18n-text data-lang="zh" class="hidden">关于</span>
+      </a>
+      <a href="#" class="btn btn-outline" id="contact-btn">
+        <span data-i18n-text data-lang="en">Get in touch</span>
+        <span data-i18n-text data-lang="zh" class="hidden">联系我</span>
       </a>
     </div>
+
+    <!-- Scroll hint arrow -->
+    <div
+      id="scroll-hint"
+      class="absolute bottom-6 left-1/2 -translate-x-1/2 text-[#B5967A] opacity-70"
+    >
+      <svg
+        id="scroll-chevron"
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-9 h-9"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2.5"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"
+        ></path>
+      </svg>
+    </div>
   </div>
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+  <div id="projects-section">
+    <div
+      class="text-3xl w-full font-bold mb-2 text-center"
+      style="font-family:'Space Mono',ui-monospace,monospace"
+    >
+      <span data-i18n-text data-lang="en">My projects</span>
+      <span data-i18n-text data-lang="zh" class="hidden">我的项目</span>
+    </div>
   </div>
 
-  <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
+  <div class="relative mt-8 mb-12">
+    <div
+      class="absolute top-5 left-0 right-0 h-px bg-[#E3DAD0] pointer-events-none z-0"
+    >
+    </div>
+    <div
+      id="accordion-track"
+      class="flex gap-3 w-full pb-6"
+      style="isolation:isolate; transform:translateZ(0)"
+    >
+      {
+        last_projects.map((project, i) => {
+          const slug =
+            "/projects/" + createSlug(project.data.title, project.slug);
+          return (
+            <a href={slug} class="accordion-card relative block">
+              <div class="accordion-dot absolute top-[14px] left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-[#C4B5A8] border-2 border-white z-20 transition-colors duration-300" />
+              <div class="rounded-xl overflow-hidden relative h-[420px] bg-[#F0EBE3] mt-8">
+                {project.data.heroImage && (
+                  <img
+                    src={project.data.heroImage}
+                    alt={project.data.title}
+                    class="absolute inset-0 w-full h-full object-cover object-top"
+                  />
+                )}
+                <div class="absolute inset-0 bg-gradient-to-t from-[#2E2825]/90 via-[#2E2825]/25 to-transparent" />
+                <div class="absolute bottom-0 left-0 right-0 p-5">
+                  <p class="accordion-desc text-xs text-white/75 leading-relaxed mb-3 line-clamp-3">
+                    <span data-i18n-text data-lang="en">
+                      {project.data.description}
+                    </span>
+                    {project.data.descriptionZh && (
+                      <span data-i18n-text data-lang="zh" class="hidden">
+                        {project.data.descriptionZh}
+                      </span>
+                    )}
+                  </p>
+                  <div class="accordion-tags flex flex-wrap gap-1 mb-2">
+                    {project.data.tags?.slice(0, 3).map((tag) => (
+                      <span data-i18n-text data-lang="en" class="text-[10px] px-2 py-0.5 rounded-full bg-white/20 text-white/90">
+                        {tag}
+                      </span>
+                    ))}
+                    {project.data.tagsZh?.slice(0, 3).map((tag) => (
+                      <span data-i18n-text data-lang="zh" class="hidden text-[10px] px-2 py-0.5 rounded-full bg-white/20 text-white/90">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div class="text-[10px] font-mono text-[#C4B5A8] mb-1.5">
+                    0{i + 1}
+                  </div>
+                  <h3
+                    class="text-sm font-semibold text-white leading-snug line-clamp-2"
+                    style="font-family:'Space Mono',ui-monospace,monospace"
+                  >
+                    <span data-i18n-text data-lang="en">
+                      {project.data.title}
+                    </span>
+                    {project.data.titleZh && (
+                      <span data-i18n-text data-lang="zh" class="hidden">
+                        {project.data.titleZh}
+                      </span>
+                    )}
+                  </h3>
+                </div>
+              </div>
+            </a>
+          );
+        })
+      }
+    </div>
+  </div>
 
+  {
+    /* Blog posts section — uncomment when content is ready
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
   </div>
-
   {
     last_posts.map((post) => (
       <>
@@ -75,4 +530,352 @@ const last_posts = posts.slice(0, 3);
       </>
     ))
   }
+  */
+  }
 </BaseLayout>
+
+<style>
+  @keyframes scroll-bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(6px);
+    }
+  }
+  #scroll-chevron {
+    animation: scroll-bounce 1.4s ease-in-out infinite;
+  }
+  #scroll-hint {
+    transition: opacity 0.4s ease;
+  }
+  #scroll-hint.invisible {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* plant groups — no CSS animation, using SVG animateTransform instead */
+
+  /* ── Hero name letters ── */
+  .letter {
+    display: inline-block;
+  }
+
+  /* extra "a" base */
+  .extra-a {
+    display: inline-block;
+    width: 0;
+    overflow: hidden;
+  }
+  .extra-a-yuan {
+    animation: extra-a-reveal 2.6s ease-in-out 0.2s both;
+  }
+  .extra-a-zhao {
+    animation: extra-a-reveal 2.6s ease-in-out 0.5s both;
+  }
+
+  @keyframes extra-a-reveal {
+    0%,
+    12% {
+      width: 0;
+      opacity: 0;
+    }
+    24% {
+      width: 0.6em;
+      opacity: 1;
+    }
+    50% {
+      width: 0.6em;
+      opacity: 1;
+    }
+    62% {
+      width: 0;
+      opacity: 0;
+    }
+    100% {
+      width: 0;
+      opacity: 0;
+    }
+  }
+
+  /* "an" moves upper-left → hold → return */
+  .an-group {
+    display: inline-block;
+    animation: an-move 2.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
+  }
+  @keyframes an-move {
+    0%,
+    16% {
+      transform: translate(0, 0);
+    }
+    44% {
+      transform: translate(-0.9em, -0.5em);
+    }
+    64% {
+      transform: translate(-0.9em, -0.5em);
+    }
+    86% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  /* "ao" moves down → left → return */
+  .ao-group {
+    display: inline-block;
+    animation: ao-move 2.6s cubic-bezier(0.4, 0, 0.2, 1) 0.5s both;
+  }
+  @keyframes ao-move {
+    0%,
+    16% {
+      transform: translate(0, 0);
+    }
+    34% {
+      transform: translate(0, 0.6em);
+    }
+    52% {
+      transform: translate(-1.3em, 0.6em);
+    }
+    66% {
+      transform: translate(-1.3em, 0.6em);
+    }
+    86% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  /* ── Chinese hero chars ── */
+  @keyframes zh-spring-left {
+    0% {
+      transform: translateX(-1.2em);
+      opacity: 0;
+    }
+    60% {
+      transform: translateX(0.08em);
+      opacity: 1;
+    }
+    80% {
+      transform: translateX(-0.03em);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes zh-spring-right {
+    0% {
+      transform: translateX(1.2em);
+      opacity: 0;
+    }
+    60% {
+      transform: translateX(-0.08em);
+      opacity: 1;
+    }
+    80% {
+      transform: translateX(0.03em);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .zh-char-1 {
+    animation: zh-spring-left 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s both;
+  }
+  .zh-char-2 {
+    animation: zh-spring-right 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) 0.38s both;
+  }
+
+  @keyframes letter-bounce-up {
+    0%,
+    100% {
+      translate: 0 0;
+    }
+    45% {
+      translate: 0 -10px;
+    }
+  }
+  @keyframes letter-bounce-down {
+    0%,
+    100% {
+      translate: 0 0;
+    }
+    45% {
+      translate: 0 10px;
+    }
+  }
+
+  /* ── Accordion track ── */
+  #accordion-track {
+    width: min(calc(100vw - 48px), calc(1100px - 48px));
+  }
+
+  .accordion-card {
+    flex: 1;
+    min-width: 0;
+    transition: flex 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .accordion-card:hover {
+    flex: 3;
+  }
+  .accordion-card:hover .accordion-dot {
+    background-color: #7c6354;
+  }
+
+  .accordion-desc,
+  .accordion-tags {
+    opacity: 0;
+    transform: translateY(6px);
+    transition:
+      opacity 0.25s ease 0.18s,
+      transform 0.25s ease 0.18s;
+  }
+  .accordion-card:hover .accordion-desc,
+  .accordion-card:hover .accordion-tags {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+<script>
+  function initScrollHint() {
+    const hint = document.getElementById("scroll-hint");
+    const target = document.getElementById("projects-section");
+    if (!hint) return;
+
+    // Click → smooth scroll to projects
+    hint.addEventListener("click", () => {
+      if (!target) return;
+      const y = target.getBoundingClientRect().top + window.scrollY - 72;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    });
+    hint.style.cursor = "pointer";
+
+    // Fade out once user scrolls past hero
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        hint.classList.toggle("invisible", entry.isIntersecting);
+      },
+      { threshold: 0.1 },
+    );
+    if (target) observer.observe(target);
+  }
+
+  document.addEventListener("astro:page-load", initScrollHint);
+  document.addEventListener("DOMContentLoaded", initScrollHint);
+
+  function initHeroAnimation() {
+    const hero = document.getElementById("hero-section");
+    const letterAs = document.querySelectorAll<HTMLElement>(".letter-a");
+    const aoGroup = document.querySelector<HTMLElement>(".ao-group");
+    const zhChar2 = document.querySelector<HTMLElement>(".zh-char-2");
+    if (!hero || !letterAs.length) return;
+
+    // Block hover until load animation completes (EN or ZH path)
+    let loadDone = false;
+    const onLoadEnd = () => {
+      loadDone = true;
+    };
+    aoGroup?.addEventListener("animationend", onLoadEnd, { once: true });
+    zhChar2?.addEventListener("animationend", onLoadEnd, { once: true });
+    setTimeout(() => {
+      loadDone = true;
+    }, 3500);
+
+    const allLetters = Array.from(
+      document.querySelectorAll<HTMLElement>("#hero-name .letter"),
+    );
+    let hoverTimer: ReturnType<typeof setInterval> | null = null;
+
+    function pickAndAnimate() {
+      // Only animate letters whose parent span is visible (respects EN/ZH toggle)
+      const visible = allLetters.filter((el) => el.offsetParent !== null);
+      if (visible.length < 2) return;
+      visible.forEach((el) => {
+        el.style.animation = "";
+      });
+      const i1 = Math.floor(Math.random() * visible.length);
+      let i2;
+      do {
+        i2 = Math.floor(Math.random() * visible.length);
+      } while (i2 === i1);
+      visible[i1].style.animation =
+        "letter-bounce-up   2.2s cubic-bezier(0.4,0,0.2,1) 0s    1";
+      visible[i2].style.animation =
+        "letter-bounce-down 2.2s cubic-bezier(0.4,0,0.2,1) 0.18s 1";
+    }
+
+    hero.addEventListener("mouseenter", () => {
+      if (!loadDone) return;
+      pickAndAnimate();
+      hoverTimer = setInterval(pickAndAnimate, 2600);
+    });
+
+    hero.addEventListener("mouseleave", () => {
+      if (hoverTimer) {
+        clearInterval(hoverTimer);
+        hoverTimer = null;
+      }
+      allLetters.forEach((el) => {
+        el.style.animation = "";
+      });
+    });
+  }
+
+  document.addEventListener("astro:page-load", initHeroAnimation);
+  document.addEventListener("DOMContentLoaded", initHeroAnimation);
+
+  function updateAboutLink() {
+    const lang = localStorage.getItem("site-lang") || "en";
+    const btn = document.getElementById("about-btn") as HTMLAnchorElement | null;
+    if (btn) btn.href = lang === "zh" ? "/cv-zh" : "/cv";
+  }
+  document.addEventListener("astro:page-load", updateAboutLink);
+  document.addEventListener("DOMContentLoaded", updateAboutLink);
+  function updateContactLink() {
+    const lang = localStorage.getItem("site-lang") || "en";
+    const btn = document.getElementById("contact-btn") as HTMLAnchorElement | null;
+    if (btn) btn.href = lang === "zh" ? "mailto:zhao-yuan-zi@163.com" : "mailto:zhaoyuanren960318@gmail.com";
+  }
+  document.addEventListener("astro:page-load", updateContactLink);
+  document.addEventListener("DOMContentLoaded", updateContactLink);
+  document.addEventListener("click", function(e) {
+    const b = (e.target as Element | null)?.closest("button[data-lang]");
+    if (b) setTimeout(() => { updateAboutLink(); updateContactLink(); }, 10);
+  });
+
+  function initPlantVisibility() {
+    const svg = document.getElementById("plant-svg");
+    const hero = document.getElementById("hero-section");
+    if (!svg || !hero) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        svg.style.visibility = entry.isIntersecting ? "visible" : "hidden";
+      },
+      { threshold: 0 },
+    );
+    obs.observe(hero);
+  }
+  document.addEventListener("astro:page-load", initPlantVisibility);
+  document.addEventListener("DOMContentLoaded", initPlantVisibility);
+
+  function initAccordionClick() {
+    document
+      .querySelectorAll<HTMLAnchorElement>(".accordion-card")
+      .forEach((card) => {
+        card.addEventListener("pointerdown", (e) => {
+          if (e.button === 0 && !e.ctrlKey && !e.metaKey && !e.shiftKey) {
+            e.preventDefault();
+            window.location.href = card.href;
+          }
+        });
+      });
+  }
+
+  document.addEventListener("astro:page-load", initAccordionClick);
+  document.addEventListener("DOMContentLoaded", initAccordionClick);
+</script>

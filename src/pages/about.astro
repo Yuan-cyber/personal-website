@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="About" sideBarActiveItemID="about">
+  <div class="max-w-[640px] pt-16 pb-16">
+    <section class="mb-16">
+      <h2
+        style="font-family:'Space Mono',ui-monospace,monospace;font-weight:400;font-size:2rem;line-height:1.1;letter-spacing:-0.03em;color:#2E2825;margin-top:0;margin-bottom:1.5rem;"
+      >
+        About this site
+      </h2>
+      <p class="text-[#5C4A3D] leading-relaxed mb-4">
+        This is my portfolio — a collection of UX research and design work,
+        alongside a few side projects built out of curiosity. The work here
+        spans end-to-end research engagements, product redesigns, and full-stack
+        development.
+      </p>
+      <p class="text-[#5C4A3D] leading-relaxed">
+        Built with Astro, deployed on Cloudflare Pages.
+      </p>
+    </section>
+
+    <div class="border-t border-[#E3DAD0] mb-16"></div>
+
+    <section class="mb-16">
+      <h2
+        style="font-family:'Space Mono',ui-monospace,monospace;font-weight:400;font-size:2rem;line-height:1.1;letter-spacing:-0.03em;color:#2E2825;margin-top:0;margin-bottom:1.5rem;"
+      >
+        About me
+      </h2>
+    </section>
+
+    <a href="mailto:zhaoyuanren960318@gmail.com" class="btn btn-sm btn-outline"
+      >Get in touch</a
+    >
+  </div>
+
+  <script is:inline>
+    try {
+      localStorage.setItem("site-lang", "en");
+    } catch (e) {}
+    document.querySelector('button[data-lang="zh"]')?.addEventListener(
+      "click",
+      function (e) {
+        e.stopImmediatePropagation();
+        window.location.href = "/about-zh";
+      },
+      true,
+    );
+  </script>
+</BaseLayout>
